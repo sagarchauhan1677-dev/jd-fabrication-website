@@ -4,6 +4,7 @@ export const IMAGES = {
   roofing: '/images/Roofing/WhatsApp_Image_2026-07-05_at_12.58.56_PM_(1).jpeg',
   steelFabrication: '/images/Steel%20Fabrication/WhatsApp_Image_2026-07-05_at_12.58.56_PM_(2).jpeg',
   warehouse: '/images/Warehouse/WhatsApp_Image_2026-07-05_at_12.58.57_PM.jpeg',
+  hero: '/images/PEB2.jpeg.jpeg',
 };
 
 export const galleryImages = [

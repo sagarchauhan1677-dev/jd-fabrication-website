@@ -9,31 +9,20 @@ export default function Hero() {
     <section
       id="home"
       ref={ref}
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative min-h-screen overflow-hidden"
     >
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('${IMAGES.pebBuildings}')`,
-        }}
+      <img
+        src={IMAGES.hero}
+        alt="Hero background"
+        className="absolute inset-0 w-full h-full object-cover"
       />
+      <div className="absolute inset-0 hero-overlay" />
 
-      {/* Overlay */}
-      <div className="hero-overlay absolute inset-0" />
-
-      {/* Animated Shapes */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-secondary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float animation-delay-500" />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 max-w-8xl mx-auto px-6 sm:px-8 lg:px-16 py-32">
+      <div className="relative z-10 max-w-8xl mx-auto px-6 sm:px-8 lg:px-16 py-28">
         <div className="max-w-5xl">
           {/* Badge */}
           <div
-            className={`inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8 ${
+            className={`inline-flex items-center space-x-2 bg-slate-950/60 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8 ${
               isVisible ? 'animate-fade-in' : 'opacity-0'
             }`}
           >
@@ -45,7 +34,7 @@ export default function Hero() {
 
           {/* Headline */}
           <h1
-            className={`font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight mb-6 ${
+            className={`font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6 drop-shadow-[0_30px_40px_rgba(0,0,0,0.35)] ${
               isVisible
                 ? 'animate-fade-in-up animation-delay-200'
                 : 'opacity-0'
@@ -57,7 +46,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p
-            className={`text-xl sm:text-2xl text-white/85 mb-10 leading-relaxed tracking-wide ${
+            className={`text-xl sm:text-2xl text-white/90 mb-10 leading-relaxed tracking-wide drop-shadow-[0_20px_30px_rgba(0,0,0,0.25)] ${
               isVisible
                 ? 'animate-fade-in-up animation-delay-300'
                 : 'opacity-0'
