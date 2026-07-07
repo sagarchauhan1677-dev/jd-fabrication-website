@@ -31,17 +31,17 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-xl ${
         isScrolled
           ? 'bg-white/95 shadow-2xl py-3'
-          : 'bg-slate-900/30 py-5'
+          : 'bg-slate-900/30 py-3 sm:py-5'
       }`}
     >
-      <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center space-x-2 group">
             <img
               src="/logo.png?v=2"
               alt="J.D Enterprise"
-              className="h-18 sm:h-20 w-auto object-contain rounded-2xl bg-white/90 p-1 shadow-lg transition-all duration-300"
+              className="h-12 sm:h-14 lg:h-16 w-auto object-contain rounded-2xl bg-white/90 p-1 shadow-lg transition-all duration-300"
             />
           </a>
 
@@ -62,7 +62,7 @@ export default function Navbar() {
             ))}
             <a
               href="tel:+919099099916"
-              className="ml-4 flex items-center space-x-2 px-6 py-3 rounded-full btn-gradient text-white font-semibold text-sm shadow-xl"
+              className="ml-4 hidden lg:inline-flex items-center space-x-2 px-6 py-3 rounded-full btn-gradient text-white font-semibold text-sm shadow-xl"
             >
               <Phone className="w-4 h-4" />
               <span>Call Now</span>
@@ -110,7 +110,7 @@ export default function Navbar() {
             <a
               href="tel:+919099099916"
               onClick={handleLinkClick}
-              className="flex items-center justify-center space-x-2 px-4 py-3 rounded-lg btn-gradient text-white font-semibold text-sm mt-4"
+              className="flex items-center justify-center space-x-2 px-4 py-3 rounded-lg btn-gradient text-white font-semibold text-xs sm:text-sm mt-4"
             >
               <Phone className="w-4 h-4" />
               <span>Call Now</span>
