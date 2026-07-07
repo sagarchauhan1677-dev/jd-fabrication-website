@@ -38,7 +38,7 @@ export default function Statistics() {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10 relative">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {stats.map((stat, index) => (
             <StatCard key={index} stat={stat} index={index} />

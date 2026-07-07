@@ -28,20 +28,20 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-xl ${
+        isScrolled
+          ? 'bg-white/95 shadow-2xl py-3'
+          : 'bg-slate-900/30 py-5'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center space-x-2 group">
             <img
-              src="/logo.png"
+              src="/logo.png?v=2"
               alt="J.D Enterprise"
-              className={`h-14 w-auto object-contain transition-all duration-300 ${
-                isScrolled ? 'filter brightness-0' : 'filter brightness-100'
-              }`}
+              className="h-18 sm:h-20 w-auto object-contain rounded-2xl bg-white/90 p-1 shadow-lg transition-all duration-300"
             />
           </a>
 
@@ -62,7 +62,7 @@ export default function Navbar() {
             ))}
             <a
               href="tel:+919099099916"
-              className="ml-4 flex items-center space-x-2 px-5 py-2.5 rounded-lg btn-gradient text-white font-semibold text-sm"
+              className="ml-4 flex items-center space-x-2 px-6 py-3 rounded-full btn-gradient text-white font-semibold text-sm shadow-xl"
             >
               <Phone className="w-4 h-4" />
               <span>Call Now</span>

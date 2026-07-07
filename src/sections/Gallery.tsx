@@ -1,7 +1,7 @@
-import { useEffect, useState, type ChangeEvent } from 'react';
-import { X, ChevronLeft, ChevronRight, Plus } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { IMAGES } from '../constants/images';
+import { galleryImages as initialGalleryImages } from '../constants/images';
 
 type GalleryImage = {
   src: string;
@@ -11,36 +11,10 @@ type GalleryImage = {
 
 const STORAGE_KEY = 'jd-gallery-images';
 
-const defaultGalleryImages: GalleryImage[] = [
-  {
-    src: IMAGES.industrialSheds,
-    alt: 'Industrial shed with custom steel framework',
-    label: 'Industrial Sheds',
-  },
-  {
-    src: IMAGES.pebBuildings,
-    alt: 'PEB building frame under construction',
-    label: 'PEB Buildings',
-  },
-  {
-    src: IMAGES.roofing,
-    alt: 'Premium rooftop pergola structure',
-    label: 'Roofing & Cladding',
-  },
-  {
-    src: IMAGES.steelFabrication,
-    alt: 'Polycarbonate curved roofing system',
-    label: 'Steel Fabrication',
-  },
-  {
-    src: IMAGES.warehouse,
-    alt: 'Custom fabricated steel structure',
-    label: 'Custom Structures',
-  },
-];
+const defaultGalleryImages: GalleryImage[] = initialGalleryImages.map((image) => ({ ...image }));
 
 export default function Gallery() {
-  const [galleryImages, setGalleryImages] = useState<GalleryImage[]>(() => {
+  const [galleryImages, _setGalleryImages] = useState<GalleryImage[]>(() => {
     if (typeof window === 'undefined') return defaultGalleryImages;
 
     const saved = window.localStorage.getItem(STORAGE_KEY);
@@ -62,37 +36,6 @@ export default function Gallery() {
     }
   }, [galleryImages]);
 
-  const handleAddImages = async (event: ChangeEvent<HTMLInputElement>) => {
-    const files = Array.from(event.target.files ?? []);
-    if (!files.length) return;
-
-    const loadedImages = await Promise.all(
-      files.map(
-        (file) =>
-          new Promise<GalleryImage>((resolve, reject) => {
-            const reader = new FileReader();
-            reader.onload = () => {
-              const result = reader.result;
-              if (typeof result === 'string') {
-                resolve({
-                  src: result,
-                  alt: file.name.replace(/\.[^.]+$/, ''),
-                  label: file.name.replace(/\.[^.]+$/, ''),
-                });
-              } else {
-                reject(new Error('Could not read image file'));
-              }
-            };
-            reader.onerror = () => reject(new Error('Could not read image file'));
-            reader.readAsDataURL(file);
-          })
-      )
-    );
-
-    setGalleryImages((prev) => [...loadedImages, ...prev]);
-    event.target.value = '';
-  };
-
   const openModal = (index: number) => {
     setCurrentIndex(index);
     setIsOpen(true);
@@ -113,7 +56,7 @@ export default function Gallery() {
       id="gallery"
       className="py-20 lg:py-32 bg-gray-50 relative overflow-hidden"
     >
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div ref={ref} className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div
@@ -145,18 +88,6 @@ export default function Gallery() {
             Browse our real project photos — each image represents the craftsmanship
             and quality J.D Enterprise delivers on every build.
           </p>
-        </div>
-
-        <div
-          className={`flex justify-center mb-8 ${
-            isVisible ? 'animate-fade-in-up animation-delay-300' : 'opacity-0'
-          }`}
-        >
-          <label className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-primary bg-white px-5 py-3 text-sm font-semibold text-primary shadow-sm transition hover:bg-primary hover:text-white">
-            <Plus className="h-4 w-4" />
-            <span>Add Photos from Computer</span>
-            <input type="file" accept="image/*" multiple onChange={handleAddImages} className="hidden" />
-          </label>
         </div>
 
         {/* Featured Bento Grid */}
@@ -209,22 +140,6 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Category Labels below */}
-        <div
-          className={`flex flex-wrap justify-center gap-3 mt-8 ${
-            isVisible ? 'animate-fade-in-up animation-delay-500' : 'opacity-0'
-          }`}
-        >
-          {galleryImages.map((img, i) => (
-            <button
-              key={i}
-              onClick={() => openModal(i)}
-              className="px-4 py-2 bg-white text-primary text-sm font-medium rounded-lg border border-gray-200 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm"
-            >
-              {img.label}
-            </button>
-          ))}
-        </div>
       </div>
 
       {/* Lightbox Modal */}
@@ -257,9 +172,6 @@ export default function Gallery() {
               alt={galleryImages[currentIndex].alt}
               className="max-w-full max-h-[80vh] object-contain rounded-xl mx-auto"
             />
-            <p className="text-white/70 text-center mt-4 text-sm">
-              {galleryImages[currentIndex].alt}
-            </p>
           </div>
 
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2">

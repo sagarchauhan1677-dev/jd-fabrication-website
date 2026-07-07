@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
       <div className="absolute top-20 right-20 w-64 h-64 bg-secondary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
 
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div ref={ref} className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10 relative">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div

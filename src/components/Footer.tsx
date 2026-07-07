@@ -21,7 +21,7 @@ const socialLinks = [
   { icon: Facebook, href: 'https://www.facebook.com/Jashdhan1998', label: 'Facebook' },
   { icon: Twitter, href: '#', label: 'Twitter' },
   { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: Instagram, href: 'https://www.instagram.com/j.d.enterprise1677/', label: 'Instagram' },
 ];
 
 export default function Footer() {
@@ -32,30 +32,33 @@ export default function Footer() {
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-pattern opacity-10" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+      <div className="relative max-w-8xl mx-auto px-6 sm:px-8 lg:px-10 pt-16 pb-10">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <img
-                src="/logo.png"
+                src="/logo.png?v=2"
                 alt="J.D Enterprise"
-                className="h-20 w-auto object-contain"
+                className="h-20 w-auto object-contain rounded-3xl bg-white/90 p-2 shadow-2xl"
               />
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed mb-6">
+            <p className="text-gray-300 text-sm leading-relaxed mb-4">
               Leading industrial fabrication and construction company in India, delivering premium quality engineering solutions since 1996.
             </p>
-            <div className="flex space-x-3">
+            <p className="text-white text-sm font-medium mb-3">Follow us</p>
+            <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
                   aria-label={social.label}
-                  className="p-2 bg-white/10 rounded-lg hover:bg-secondary transition-colors duration-300"
+                  className="flex items-center justify-center p-3 bg-white/15 border border-white/20 text-white rounded-xl shadow-sm transition-all duration-300 hover:bg-white hover:text-primary"
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-6 h-6" />
                 </a>
               ))}
             </div>
@@ -137,7 +140,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/10 pt-8">
+        <div className="border-t border-white/10 pt-10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
               {currentYear} J.D Enterprise. All rights reserved.

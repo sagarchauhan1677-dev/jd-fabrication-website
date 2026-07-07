@@ -1,11 +1,34 @@
-// Local uploaded project images — served from /public
-const BASE = '/images';
-
 export const IMAGES = {
-  // Core categories (URL-encoded paths for spaces)
-  industrialSheds: `${BASE}/Industrial%20Sheds/WhatsApp_Image_2026-07-05_at_12.58.59_PM.jpeg`,
-  pebBuildings: `${BASE}/PEB%20Buildings/WhatsApp_Image_2026-07-05_at_12.58.58_PM.jpeg`,
-  warehouse: `${BASE}/Warehouse/WhatsApp_Image_2026-07-05_at_12.58.57_PM.jpeg`,
-  steelFabrication: `${BASE}/Steel%20Fabrication/WhatsApp_Image_2026-07-05_at_12.58.56_PM_(2).jpeg`,
-  roofing: `${BASE}/Roofing/WhatsApp_Image_2026-07-05_at_12.58.56_PM_(1).jpeg`,
-} as const;
+  industrialSheds: '/images/Industrial%20Sheds/WhatsApp_Image_2026-07-05_at_12.58.59_PM.jpeg',
+  pebBuildings: '/images/PEB%20Buildings/WhatsApp_Image_2026-07-05_at_12.58.58_PM.jpeg',
+  roofing: '/images/Roofing/WhatsApp_Image_2026-07-05_at_12.58.56_PM_(1).jpeg',
+  steelFabrication: '/images/Steel%20Fabrication/WhatsApp_Image_2026-07-05_at_12.58.56_PM_(2).jpeg',
+  warehouse: '/images/Warehouse/WhatsApp_Image_2026-07-05_at_12.58.57_PM.jpeg',
+};
+
+export const galleryImages = [
+  { src: IMAGES.industrialSheds, alt: 'Industrial shed project', label: 'Industrial Sheds' },
+  { src: IMAGES.pebBuildings, alt: 'PEB building structure', label: 'PEB Buildings' },
+  { src: IMAGES.roofing, alt: 'Roofing and cladding work', label: 'Roofing & Cladding' },
+  { src: IMAGES.steelFabrication, alt: 'Steel fabrication work', label: 'Steel Fabrication' },
+  { src: IMAGES.warehouse, alt: 'Warehouse steel structure', label: 'Warehouse' },
+  { src: '/images/Fabrication-work1.jpg.jpeg', alt: 'Fabrication work 1', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work2.jpg.jpeg', alt: 'Fabrication work 2', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work3.jpg.jpg', alt: 'Fabrication work 3', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work4.jpg.jpg', alt: 'Fabrication work 4', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work5.jpg.jpg', alt: 'Fabrication work 5', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work6.jpg.jpeg', alt: 'Fabrication work 6', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work7.jpg.jpg', alt: 'Fabrication work 7', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work8.jpg.jpeg', alt: 'Fabrication work 8', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work9.jpg.jpg', alt: 'Fabrication work 9', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work10.jpg.jpg', alt: 'Fabrication work 10', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work11.jpg.jpg', alt: 'Fabrication work 11', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work12.jpg.jpg', alt: 'Fabrication work 12', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work13.jpg.jpg', alt: 'Fabrication work 13', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work14.jpg.jpg', alt: 'Fabrication work 14', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work15.jpg.jpg', alt: 'Fabrication work 15', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work16.jpg.jpeg', alt: 'Fabrication work 16', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work17.jpg.jpeg', alt: 'Fabrication work 17', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work18.jpg.jpeg', alt: 'Fabrication work 18', label: 'Fabrication Work' },
+  { src: '/images/Fabrication-work19.jpg.jpeg', alt: 'Fabrication work 19', label: 'Fabrication Work' },
+];

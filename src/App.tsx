@@ -3,6 +3,7 @@ import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import Hero from './sections/Hero';
 import About from './sections/About';
+import Goal from './sections/Goal';
 import Services from './sections/Services';
 import WhyChooseUs from './sections/WhyChooseUs';
 import Statistics from './sections/Statistics';
@@ -13,11 +14,12 @@ import Contact from './sections/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-slate-50 text-slate-900">
       <Navbar />
-      <main>
+      <main className="space-y-24">
         <Hero />
         <About />
+        <Goal />
         <Services />
         <WhyChooseUs />
         <Statistics />

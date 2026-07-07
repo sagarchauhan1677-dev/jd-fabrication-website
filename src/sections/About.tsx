@@ -17,7 +17,7 @@ export default function About() {
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-pattern opacity-50" />
 
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div ref={ref} className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10 relative">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image Side */}
           <div

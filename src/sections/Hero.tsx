@@ -29,8 +29,8 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="max-w-3xl">
+      <div className="relative z-10 max-w-8xl mx-auto px-6 sm:px-8 lg:px-16 py-32">
+        <div className="max-w-5xl">
           {/* Badge */}
           <div
             className={`inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8 ${
@@ -45,7 +45,7 @@ export default function Hero() {
 
           {/* Headline */}
           <h1
-            className={`font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6 ${
+            className={`font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight mb-6 ${
               isVisible
                 ? 'animate-fade-in-up animation-delay-200'
                 : 'opacity-0'
@@ -57,7 +57,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p
-            className={`text-lg sm:text-xl text-white/80 mb-10 leading-relaxed ${
+            className={`text-xl sm:text-2xl text-white/85 mb-10 leading-relaxed tracking-wide ${
               isVisible
                 ? 'animate-fade-in-up animation-delay-300'
                 : 'opacity-0'
@@ -76,14 +76,14 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="group inline-flex items-center space-x-2 px-8 py-4 btn-gradient rounded-xl text-white font-semibold text-lg shadow-lg"
+              className="group inline-flex items-center space-x-3 px-8 py-4 btn-gradient rounded-full text-white font-semibold text-lg shadow-2xl"
             >
               <span>Get Free Quote</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#projects"
-              className="group inline-flex items-center space-x-3 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-xl text-white font-semibold text-lg hover:bg-white/20 transition-all"
+              className="group inline-flex items-center space-x-3 px-8 py-4 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full text-white font-semibold text-lg hover:bg-white hover:text-primary transition-all"
             >
               <Play className="w-5 h-5" />
               <span>View Projects</span>

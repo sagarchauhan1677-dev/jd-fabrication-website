@@ -114,7 +114,7 @@ export default function Contact() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3 pointer-events-none" />
 
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div ref={ref} className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10 relative">
 
         {/* ── Section Header ── */}
         <div className="text-center max-w-3xl mx-auto mb-16">
