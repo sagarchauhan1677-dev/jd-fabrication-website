@@ -116,225 +116,334 @@ export const galleryImages = [
     label: 'Warehouse',
   },
 
-  // Gallery
-  {
-    src: '/images/Gallery/fabricationwork1.jpeg',
-    alt: 'Fabrication Work 1',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork2.jpeg',
-    alt: 'Fabrication Work 2',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork3.jpg',
-    alt: 'Fabrication Work 3',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork4.jpg',
-    alt: 'Fabrication Work 4',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork5.jpg',
-    alt: 'Fabrication Work 5',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork6.jpeg',
-    alt: 'Fabrication Work 6',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork7.jpg',
-    alt: 'Fabrication Work 7',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork8.jpeg',
-    alt: 'Fabrication Work 8',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork9.jpg',
-    alt: 'Fabrication Work 9',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork10.jpg',
-    alt: 'Fabrication Work 10',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork11.jpg',
-    alt: 'Fabrication Work 11',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork12.jpg',
-    alt: 'Fabrication Work 12',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork13.jpg',
-    alt: 'Fabrication Work 13',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork14.jpg',
-    alt: 'Fabrication Work 14',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork15.jpg',
-    alt: 'Fabrication Work 15',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork16.jpeg',
-    alt: 'Fabrication Work 16',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork17.jpeg',
-    alt: 'Fabrication Work 17',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork18.jpeg',
-    alt: 'Fabrication Work 18',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork19.jpeg',
-    alt: 'Fabrication Work 19',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork20.jpeg',
-    alt: 'Fabrication Work 20',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork21.jpeg',
-    alt: 'Fabrication Work 21',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork23.jpeg',
-    alt: 'Fabrication Work 23',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork24.jpeg',
-    alt: 'Fabrication Work 24',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork25.jpeg',
-    alt: 'Fabrication Work 25',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork26.jpeg',
-    alt: 'Fabrication Work 26',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork27.jpeg',
-    alt: 'Fabrication Work 27',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork28.jpeg',
-    alt: 'Fabrication Work 28',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork29.jpeg',
-    alt: 'Fabrication Work 29',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork30.jpeg',
-    alt: 'Fabrication Work 30',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork31.jpeg',
-    alt: 'Fabrication Work 31',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork32.jpeg',
-    alt: 'Fabrication Work 32',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork33.jpeg',
-    alt: 'Fabrication Work 33',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork34.jpeg',
-    alt: 'Fabrication Work 34',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork35.jpeg',
-    alt: 'Fabrication Work 35',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork36.jpeg',
-    alt: 'Fabrication Work 36',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork37.jpeg',
-    alt: 'Fabrication Work 37',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork38.jpeg',
-    alt: 'Fabrication Work 38',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork39.jpeg',
-    alt: 'Fabrication Work 39',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork40.jpeg',
-    alt: 'Fabrication Work 40',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork42.jpeg',
-    alt: 'Fabrication Work 42',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork43.jpeg',
-    alt: 'Fabrication Work 43',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork44.jpeg',
-    alt: 'Fabrication Work 44',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork45.jpeg',
-    alt: 'Fabrication Work 45',
-    label: 'Gallery',
-  },
-  {
-    src: '/images/Gallery/fabricationwork47.jpeg',
-    alt: 'Fabrication Work 47',
-    label: 'Gallery',
-  },
-];
+  /// Gallery
+{
+  src: '/images/Gallery/fabricationwork1.jpeg',
+  alt: 'Fabrication Work 1',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork2.jpeg',
+  alt: 'Fabrication Work 2',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork3.jpg',
+  alt: 'Fabrication Work 3',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork4.jpg',
+  alt: 'Fabrication Work 4',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork5.jpg',
+  alt: 'Fabrication Work 5',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork6.jpeg',
+  alt: 'Fabrication Work 6',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork7.jpg',
+  alt: 'Fabrication Work 7',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork8.jpeg',
+  alt: 'Fabrication Work 8',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork9.jpg',
+  alt: 'Fabrication Work 9',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork10.jpg',
+  alt: 'Fabrication Work 10',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork11.jpg',
+  alt: 'Fabrication Work 11',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork12.jpg',
+  alt: 'Fabrication Work 12',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork13.jpg',
+  alt: 'Fabrication Work 13',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork14.jpg',
+  alt: 'Fabrication Work 14',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork15.jpg',
+  alt: 'Fabrication Work 15',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork16.jpeg',
+  alt: 'Fabrication Work 16',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork17.jpeg',
+  alt: 'Fabrication Work 17',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork18.jpeg',
+  alt: 'Fabrication Work 18',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork19.jpeg',
+  alt: 'Fabrication Work 19',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork20.jpeg',
+  alt: 'Fabrication Work 20',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork21.jpeg',
+  alt: 'Fabrication Work 21',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork23.jpeg',
+  alt: 'Fabrication Work 23',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork24.jpeg',
+  alt: 'Fabrication Work 24',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork25.jpeg',
+  alt: 'Fabrication Work 25',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork26.jpeg',
+  alt: 'Fabrication Work 26',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork27.jpeg',
+  alt: 'Fabrication Work 27',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork28.jpeg',
+  alt: 'Fabrication Work 28',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork29.jpeg',
+  alt: 'Fabrication Work 29',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork30.jpeg',
+  alt: 'Fabrication Work 30',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork31.jpeg',
+  alt: 'Fabrication Work 31',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork32.jpeg',
+  alt: 'Fabrication Work 32',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork33.jpeg',
+  alt: 'Fabrication Work 33',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork34.jpeg',
+  alt: 'Fabrication Work 34',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork35.jpeg',
+  alt: 'Fabrication Work 35',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork36.jpeg',
+  alt: 'Fabrication Work 36',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork37.jpeg',
+  alt: 'Fabrication Work 37',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork38.jpeg',
+  alt: 'Fabrication Work 38',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork39.jpeg',
+  alt: 'Fabrication Work 39',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork40.jpeg',
+  alt: 'Fabrication Work 40',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork42.jpeg',
+  alt: 'Fabrication Work 42',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork43.jpeg',
+  alt: 'Fabrication Work 43',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork44.jpeg',
+  alt: 'Fabrication Work 44',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork45.jpeg',
+  alt: 'Fabrication Work 45',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork46.jpeg',
+  alt: 'Fabrication Work 46',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork48.jpeg',
+  alt: 'Fabrication Work 48',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork49.jpeg',
+  alt: 'Fabrication Work 49',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork50.jpeg',
+  alt: 'Fabrication Work 50',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork51.jpeg',
+  alt: 'Fabrication Work 51',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork52.jpeg',
+  alt: 'Fabrication Work 52',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork53.jpeg',
+  alt: 'Fabrication Work 53',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork54.jpeg',
+  alt: 'Fabrication Work 54',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork55.jpeg',
+  alt: 'Fabrication Work 55',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork56.jpeg',
+  alt: 'Fabrication Work 56',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork57.jpeg',
+  alt: 'Fabrication Work 57',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork58.jpg',
+  alt: 'Fabrication Work 58',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork59.JPG',
+  alt: 'Fabrication Work 59',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork60.JPG',
+  alt: 'Fabrication Work 60',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork61.JPG',
+  alt: 'Fabrication Work 61',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork62.jpeg',
+  alt: 'Fabrication Work 62',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork63.JPG',
+  alt: 'Fabrication Work 63',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork64.JPG',
+  alt: 'Fabrication Work 64',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork65.JPG',
+  alt: 'Fabrication Work 65',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork66.jpg',
+  alt: 'Fabrication Work 66',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork67.jpg',
+  alt: 'Fabrication Work 67',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork68.jpg',
+  alt: 'Fabrication Work 68',
+  label: 'Gallery',
+},
+{
+  src: '/images/Gallery/fabricationwork69.jpg',
+  alt: 'Fabrication Work 69',
+  label: 'Gallery',
+},];
