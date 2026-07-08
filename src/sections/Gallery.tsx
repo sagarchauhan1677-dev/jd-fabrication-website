@@ -26,6 +26,7 @@ export default function Gallery() {
       prev === galleryImages.length - 1 ? 0 : prev + 1
     );
   };
+  console.log("Gallery images:", galleryImages.length);
 
   return (
     <section
