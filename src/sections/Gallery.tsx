@@ -6,6 +6,8 @@ import { galleryImages } from '../constants/images';
 export default function Gallery() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showAll, setShowAll] = useState(false);
+
   const { ref, isVisible } = useScrollAnimation(0.1);
 
   const openModal = (index: number) => {
@@ -26,15 +28,20 @@ export default function Gallery() {
       prev === galleryImages.length - 1 ? 0 : prev + 1
     );
   };
-  console.log("Gallery images:", galleryImages.length);
+
+  const displayedImages = showAll
+    ? galleryImages
+    : galleryImages.slice(0, 20);
 
   return (
     <section
       id="gallery"
       className="py-20 lg:py-32 bg-gray-50 relative overflow-hidden"
     >
-      <div ref={ref} className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
-
+      <div
+        ref={ref}
+        className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10"
+      >
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div
@@ -51,7 +58,9 @@ export default function Gallery() {
 
           <h2
             className={`font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6 ${
-              isVisible ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'
+              isVisible
+                ? 'animate-fade-in-up animation-delay-100'
+                : 'opacity-0'
             }`}
           >
             Our Work <span className="text-secondary">Gallery</span>
@@ -59,21 +68,25 @@ export default function Gallery() {
 
           <p
             className={`text-gray-600 text-lg ${
-              isVisible ? 'animate-fade-in-up animation-delay-200' : 'opacity-0'
+              isVisible
+                ? 'animate-fade-in-up animation-delay-200'
+                : 'opacity-0'
             }`}
           >
-            Browse our real project photos — each image represents the craftsmanship
-            and quality J.D Enterprise delivers on every build.
+            Browse our real project photos — each image represents the
+            craftsmanship and quality J.D Enterprise delivers on every build.
           </p>
         </div>
 
         {/* Images */}
         <div
           className={`grid grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[240px] ${
-            isVisible ? 'animate-fade-in-up animation-delay-400' : 'opacity-0'
+            isVisible
+              ? 'animate-fade-in-up animation-delay-400'
+              : 'opacity-0'
           }`}
         >
-          {galleryImages.map((image, index) => (
+          {displayedImages.map((image, index) => (
             <div
               key={index}
               className={`relative group cursor-pointer overflow-hidden rounded-2xl ${
@@ -85,6 +98,7 @@ export default function Gallery() {
                 src={image.src}
                 alt={image.alt}
                 loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
 
@@ -95,19 +109,26 @@ export default function Gallery() {
                   {image.label}
                 </span>
 
-                <p className="text-white text-xs">
-                  {image.alt}
-                </p>
+                <p className="text-white text-xs">{image.alt}</p>
               </div>
             </div>
           ))}
         </div>
 
+        {!showAll && (
+          <div className="text-center mt-10">
+            <button
+              onClick={() => setShowAll(true)}
+              className="px-8 py-3 bg-secondary text-white rounded-full font-semibold hover:bg-orange-600 transition"
+            >
+              View All Images
+            </button>
+          </div>
+        )}
       </div>
 
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4">
-
           <button
             onClick={closeModal}
             className="absolute top-4 right-4 p-3 bg-white/10 rounded-full text-white"
@@ -136,7 +157,6 @@ export default function Gallery() {
               className="max-w-full max-h-[80vh] object-contain mx-auto rounded-xl"
             />
           </div>
-
         </div>
       )}
     </section>
