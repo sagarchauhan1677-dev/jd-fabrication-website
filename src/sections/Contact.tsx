@@ -84,6 +84,7 @@ export default function Contact() {
     message: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (
@@ -123,7 +124,9 @@ export default function Contact() {
     setIsLoading(false);
 
     if (result.success) {
+      setIsLoading(false);
       setIsSubmitted(true);
+      setShowSuccessPopup(true);
 
       window.open(
         `https://wa.me/919099099916?text=${encodeURIComponent(
@@ -159,7 +162,10 @@ ${formData.message}`
     alert("Something went wrong.");
     console.error(error);
   }
+}; const closeSuccessPopup = () => {
+  setShowSuccessPopup(false);
 };
+
   return (
     <section
       id="contact"
@@ -473,6 +479,49 @@ ${formData.message}`
           </div>
         </div>
       </div>
-    </section>
+    {showSuccessPopup && (
+  <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm px-4 animate-fadeIn">
+    <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md w-full text-center relative animate-popup">
+
+      <div className="mx-auto mb-5 flex items-center justify-center w-20 h-20 rounded-full bg-green-100">
+        <svg
+          className="w-12 h-12 text-green-600"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="3"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+      </div>
+
+      <h2 className="text-3xl font-bold text-gray-900 mb-2">
+        Thank You!
+      </h2>
+
+      <p className="text-orange-600 font-semibold mb-4">
+        J.D Enterprise
+      </p>
+
+      <p className="text-gray-600 leading-relaxed mb-8">
+        Your enquiry has been sent successfully.
+        <br />
+        Our team will contact you shortly.
+      </p>
+
+      <button
+        onClick={closeSuccessPopup}
+        className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-xl transition duration-300"
+      >
+        Continue
+      </button>
+
+    </div>
+  </div>
+)} </section>
   );
 }
