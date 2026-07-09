@@ -14,6 +14,8 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const SAGARSINH_PHONE = '919099099916';
 const HARDIKSINH_PHONE = '919409119219';
+const ACCESS_KEY = "ce0c6ec1-899b-4d3c-8f74-f2069589afd3";
+
 const WA_MESSAGE = encodeURIComponent(
   'Hello J.D Enterprise! I would like to inquire about your industrial fabrication services.'
 );
@@ -92,19 +94,72 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-      setIsSubmitted(true);
-    }, 1200);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-    }, 5000);
-  };
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsLoading(true);
 
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: ACCESS_KEY,
+        subject: "New Inquiry from J.D Enterprise Website",
+        from_name: "J.D Enterprise Website",
+
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+      }),
+    });
+
+    const result = await response.json();
+
+    setIsLoading(false);
+
+    if (result.success) {
+      setIsSubmitted(true);
+
+      window.open(
+        `https://wa.me/919099099916?text=${encodeURIComponent(
+          `New Inquiry from Website
+
+Name: ${formData.name}
+Phone: ${formData.phone}
+Email: ${formData.email}
+Service: ${formData.service}
+
+Message:
+${formData.message}`
+        )}`,
+        "_blank"
+      );
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: "",
+      });
+
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 5000);
+    } else {
+      alert("Unable to send message.");
+    }
+  } catch (error) {
+    setIsLoading(false);
+    alert("Something went wrong.");
+    console.error(error);
+  }
+};
   return (
     <section
       id="contact"
