@@ -12,22 +12,22 @@ export const galleryImages = [
   // Featured Categories
   {
     src: IMAGES.industrialSheds,
-    alt: 'Industrial Shed',
+    alt: 'Industrial Shed Steel Fabrication Project by J.D Enterprise in Ahmedabad, Gujarat',
     label: 'Industrial Sheds',
   },
   {
     src: IMAGES.pebBuildings,
-    alt: 'PEB Building',
+    alt: 'PEB Building Construction by J.D Enterprise in Gujarat',
     label: 'PEB Buildings',
   },
   {
     src: IMAGES.roofing,
-    alt: 'Roofing',
+    alt: 'Roofing Project by J.D Enterprise in Ahmedabad',
     label: 'Roofing',
   },
   {
     src: IMAGES.steelFabrication,
-    alt: 'Steel Fabrication',
+    alt: 'Steel Fabrication and Industrial Structure Project by J.D Enterprise in Ahmedabad',
     label: 'Steel Fabrication',
   },
   {

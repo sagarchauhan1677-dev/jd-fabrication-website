@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { galleryImages } from '../constants/images';
+import { useState } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
+import { galleryImages } from "../constants/images";
 
 export default function Gallery() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,38 +43,44 @@ export default function Gallery() {
         className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10"
       >
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-4xl mx-auto mb-12">
           <div
             className={`inline-flex items-center space-x-2 mb-4 ${
-              isVisible ? 'animate-fade-in' : 'opacity-0'
+              isVisible ? "animate-fade-in" : "opacity-0"
             }`}
           >
             <span className="w-8 h-0.5 bg-secondary"></span>
+
             <span className="text-secondary font-medium text-sm tracking-wider uppercase">
               Gallery
             </span>
+
             <span className="w-8 h-0.5 bg-secondary"></span>
           </div>
 
           <h2
             className={`font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6 ${
               isVisible
-                ? 'animate-fade-in-up animation-delay-100'
-                : 'opacity-0'
+                ? "animate-fade-in-up animation-delay-100"
+                : "opacity-0"
             }`}
           >
-            Our Work <span className="text-secondary">Gallery</span>
+            Industrial Fabrication &{" "}
+            <span className="text-secondary">Project Gallery</span>
           </h2>
 
           <p
             className={`text-gray-600 text-lg ${
               isVisible
-                ? 'animate-fade-in-up animation-delay-200'
-                : 'opacity-0'
+                ? "animate-fade-in-up animation-delay-200"
+                : "opacity-0"
             }`}
           >
-            Browse our real project photos — each image represents the
-            craftsmanship and quality J.D Enterprise delivers on every build.
+            Explore our completed Steel Fabrication, Industrial Shed, PEB
+            Building, Warehouse Construction, Roofing and Structural Steel
+            projects across Ahmedabad and Gujarat. Every project showcases our
+            commitment to quality engineering, precision workmanship and
+            customer satisfaction built over more than 28 years.
           </p>
         </div>
 
@@ -82,15 +88,15 @@ export default function Gallery() {
         <div
           className={`grid grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[240px] ${
             isVisible
-              ? 'animate-fade-in-up animation-delay-400'
-              : 'opacity-0'
+              ? "animate-fade-in-up animation-delay-400"
+              : "opacity-0"
           }`}
         >
           {displayedImages.map((image, index) => (
             <div
               key={index}
               className={`relative group cursor-pointer overflow-hidden rounded-2xl ${
-                index === 0 ? 'row-span-2' : ''
+                index === 0 ? "row-span-2" : ""
               }`}
               onClick={() => openModal(index)}
             >
@@ -109,7 +115,9 @@ export default function Gallery() {
                   {image.label}
                 </span>
 
-                <p className="text-white text-xs">{image.alt}</p>
+                <p className="text-white text-xs">
+                  {image.alt}
+                </p>
               </div>
             </div>
           ))}
