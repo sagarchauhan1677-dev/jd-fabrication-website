@@ -24,7 +24,8 @@ export default function SEO({
         "email": "jd1677@jdfabrication.co.in",
         "telephone": "+91-9099099916",
         "sameAs": [
-          "https://www.instagram.com/j.d.enterprise1677/"
+          "https://www.instagram.com/j.d.enterprise1677/",
+          "https://x.com/JDENTERPRISE007"
         ]
       },
       {
@@ -38,6 +39,9 @@ export default function SEO({
           "+91-9409119219"
         ],
         "priceRange": "₹₹",
+        "openingHours": [
+          "Mo-Sa 09:00-18:00"
+        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "17/A J.D Enterprise, Shahpur Society, Opp Master Colony",
@@ -47,12 +51,58 @@ export default function SEO({
           "addressCountry": "IN"
         },
         "areaServed": [
-          "Ahmedabad",
-          "Gujarat",
-          "India"
+          {
+            "@type": "City",
+            "name": "Ahmedabad"
+          },
+          {
+            "@type": "State",
+            "name": "Gujarat"
+          },
+          {
+            "@type": "Country",
+            "name": "India"
+          }
         ],
         "description":
-          "J.D Enterprise specializes in Industrial Sheds, PEB Buildings, Steel Fabrication, Warehouse Construction, Roofing Solutions and Custom Industrial Structures."
+          "J.D Enterprise specializes in Industrial Sheds, PEB Buildings, Steel Fabrication, Warehouse Construction, Roofing Solutions and Custom Industrial Structures.",
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Industrial Shed Fabrication"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "PEB Building"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steel Fabrication"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warehouse Construction"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roofing Solutions"
+            }
+          }
+        ]
       }
     ]
   };
@@ -69,13 +119,13 @@ export default function SEO({
       )}
 
       <meta name="robots" content="index, follow" />
-
       <meta name="author" content="J.D Enterprise" />
 
       <link rel="canonical" href={url} />
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />
+      <meta property="og:locale" content="en_IN" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
@@ -84,8 +134,12 @@ export default function SEO({
         property="og:image"
         content="https://jdfabrication.co.in/logo.png"
       />
+      <meta
+        property="og:image:alt"
+        content="Industrial Shed & Steel Fabrication by J.D Enterprise"
+      />
 
-      {/* Twitter */}
+      {/* Twitter / X */}
       <meta
         name="twitter:card"
         content="summary_large_image"
@@ -102,9 +156,24 @@ export default function SEO({
         name="twitter:image"
         content="https://jdfabrication.co.in/logo.png"
       />
+      <meta
+        name="twitter:image:alt"
+        content="Industrial Shed & Steel Fabrication by J.D Enterprise"
+      />
+      <meta
+        name="twitter:site"
+        content="@JDENTERPRISE007"
+      />
+      <meta
+        name="twitter:creator"
+        content="@JDENTERPRISE007"
+      />
 
       {/* Structured Data */}
-      <script type="application/ld+json">
+      <script
+        id="schema-org"
+        type="application/ld+json"
+      >
         {JSON.stringify(schema)}
       </script>
     </Helmet>

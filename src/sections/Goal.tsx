@@ -16,10 +16,10 @@ export default function Goal() {
           >
             <div className="relative h-[520px] sm:h-[580px] lg:h-[640px] bg-slate-100 flex items-center justify-center">
               <img
-                src="/images/Father.jpg.JPG"
-                alt="Dhanrajsinh Chauhan"
-                className="max-h-full max-w-full object-contain"
-              />
+  src="/images/Father.jpg"
+ alt="Founder of J.D Enterprise - Dhanrajsinh Chauhan"
+  className="w-full h-full object-cover object-top rounded-[2rem]"
+/>
               <div className="absolute bottom-0 left-0 right-0 bg-slate-950/90 px-6 py-5">
                 <p className="text-xs uppercase tracking-[0.35em] text-slate-300">Founder & Inspiration</p>
                 <p className="text-3xl sm:text-4xl font-semibold text-white mt-2">Dhanrajsinh Chauhan</p>

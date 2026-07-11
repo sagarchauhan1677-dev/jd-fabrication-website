@@ -40,7 +40,7 @@ export default function Navbar() {
           <a href="#home" className="flex items-center space-x-2 group">
             <img
               src="/logo.png?v=2"
-              alt="J.D Enterprise"
+              alt="J.D Enterprise - Industrial Fabrication Company in Ahmedabad"
               className="h-12 sm:h-14 lg:h-16 w-auto object-contain rounded-2xl bg-white/90 p-1 shadow-lg transition-all duration-300"
             />
           </a>

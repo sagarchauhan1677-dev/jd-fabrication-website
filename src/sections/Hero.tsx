@@ -13,7 +13,7 @@ export default function Hero() {
     >
       <img
         src={IMAGES.hero}
-        alt="Hero background"
+        alt="Industrial shed fabrication and steel structure construction by J.D Enterprise"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 hero-overlay" />
