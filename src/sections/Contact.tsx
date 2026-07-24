@@ -57,8 +57,8 @@ const infoCards = [
   {
     icon: Mail,
     title: 'Email Address',
-    lines: ['jd1677@jdfabrication.co.in'],
-    action: { href: 'mailto:jd1677@jdfabrication.co.in', label: 'Send Email' },
+    lines: ['Sagarchauhan@jdfabrication.co.in'],
+    action: { href: 'mailto:Sagarchauhan@jdfabrication.co.in', label: 'Send Email' },
     badge: null as string | null,
     bg: 'bg-accent/10',
     iconColor: 'text-accent',
@@ -444,11 +444,11 @@ ${formData.message}`
                   Ahmedabad, Gujarat — 380004
                 </p>
                 <a
-                  href="mailto:jd1677@jdfabrication.co.in"
+                  href="mailto:Sagarchauhan@jdfabrication.co.in"
                   className="inline-flex items-center gap-1.5 mt-3 text-secondary text-sm font-medium hover:text-orange-400 transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  jd1677@jdfabrication.co.in
+                  Sagarchauhan@jdfabrication.co.in
                 </a>
               </div>
             </div>
