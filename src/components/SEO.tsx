@@ -21,7 +21,7 @@ export default function SEO({
         "name": "J.D Enterprise",
         "url": "https://jdfabrication.co.in",
         "logo": "https://jdfabrication.co.in/logo.png",
-        "email": "jd1677@jdfabrication.co.in",
+        "email": "Sagarchauhan@jdfabrication.co.in",
         "telephone": "+91-9099099916",
         "sameAs": [
           "https://www.instagram.com/j.d.enterprise1677/",
@@ -33,7 +33,7 @@ export default function SEO({
         "name": "J.D Enterprise",
         "image": "https://jdfabrication.co.in/logo.png",
         "url": "https://jdfabrication.co.in",
-        "email": "jd1677@jdfabrication.co.in",
+        "email": "Sagarchauhan@jdfabrication.co.in",
         "telephone": [
           "+91-9099099916",
           "+91-9409119219"

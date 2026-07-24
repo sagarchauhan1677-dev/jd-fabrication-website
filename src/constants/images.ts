@@ -12,7 +12,7 @@ export const galleryImages = [
   // Featured Categories
   {
     src: IMAGES.industrialSheds,
-    alt: 'Industrial Shed Steel Fabrication Project by J.D Enterprise in Ahmedabad, Gujarat',
+    alt: 'Industrial Shed Steel Fabric6ation Project by J.D Enterprise in Ahmedabad, Gujarat',
     label: 'Industrial Sheds',
   },
   {
