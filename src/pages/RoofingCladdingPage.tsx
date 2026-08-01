@@ -1,0 +1,211 @@
+import { ArrowRight, Droplets, HardHat, Layers, ShieldCheck, SunMedium } from "lucide-react";
+import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
+import ServiceBreadcrumb from "../components/service-pages/ServiceBreadcrumb";
+import ServiceCTA from "../components/service-pages/ServiceCTA";
+import ServiceFAQ from "../components/service-pages/ServiceFAQ";
+import RelatedServices from "../components/service-pages/RelatedServices";
+import ServiceSchema from "../components/service-pages/ServiceSchema";
+import { IMAGES } from "../constants/images";
+
+const materials = [
+  "Profiled metal sheets",
+  "Insulated roofing panels",
+  "Wall cladding systems",
+  "Weather-resistant roof coverings",
+];
+
+const systemBenefits = [
+  "Improved weather protection",
+  "Better thermal performance",
+  "Long service life and low maintenance",
+  "Cleaner industrial envelope finish",
+];
+
+const applications = [
+  "Factory roofs and canopies",
+  "Warehouse cladding",
+  "Industrial plants and workshops",
+  "Utilities and storage spaces",
+];
+
+const installationSteps = [
+  "Detailed site assessment and measurement",
+  "Material selection and system design",
+  "Installation of support and fastening elements",
+  "Final inspection and handover",
+];
+
+const faqs = [
+  {
+    question: "What roofing systems do you install?",
+    answer: "We install industrial roofing and cladding systems suited to factories, warehouses and large structures, including metal sheet and insulated solutions.",
+  },
+  {
+    question: "Can you work on existing structures?",
+    answer: "Yes. We can support roofing and cladding upgrades, repairs and new installations depending on the project requirement.",
+  },
+  {
+    question: "Do you provide roofing for Gujarat-based industrial projects?",
+    answer: "Yes. J.D. Enterprise provides roofing services for Ahmedabad and industrial sites across Gujarat.",
+  },
+];
+
+export default function RoofingCladdingPage() {
+  return (
+    <>
+      <SEO
+        title="Industrial Roofing and Cladding Contractor Ahmedabad | J.D. Enterprise"
+        description="J.D. Enterprise is an industrial roofing and cladding contractor in Ahmedabad, delivering durable roofing systems for Gujarat industrial projects."
+        keywords="industrial roofing contractor Ahmedabad, cladding contractor Gujarat, roofing sheets Ahmedabad"
+        url="https://jdfabrication.co.in/services/roofing-cladding"
+        ogTitle="Industrial Roofing and Cladding Contractor Ahmedabad | J.D. Enterprise"
+        ogDescription="J.D. Enterprise provides industrial roofing and cladding services for factory, warehouse and plant projects in Ahmedabad and Gujarat."
+      />
+      <ServiceSchema
+        serviceName="Roofing and Cladding"
+        description="Industrial roofing and cladding services for factories, warehouses and industrial buildings."
+        url="https://jdfabrication.co.in/services/roofing-cladding"
+        breadcrumbs={[{ name: "Services", item: "https://jdfabrication.co.in/services" }, { name: "Roofing & Cladding", item: "https://jdfabrication.co.in/services/roofing-cladding" }]}
+        faqs={faqs}
+      />
+
+      <main className="bg-slate-50 pt-24">
+        <section className="bg-slate-950 py-20 text-white">
+          <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+            <div>
+              <ServiceBreadcrumb items={[{ label: "Services", to: "/services" }, { label: "Roofing & Cladding" }]} />
+              <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-sm font-semibold text-orange-400">
+                <HardHat className="h-4 w-4" />
+                Roofing and cladding specialist
+              </div>
+              <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">Weather-resistant roofing and cladding systems for industrial buildings</h1>
+              <p className="mt-6 text-lg leading-8 text-slate-300">
+                J.D. Enterprise delivers roofing and cladding services that protect industrial assets, improve building performance and keep projects looking precise and dependable throughout their service life.
+              </p>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-500 px-6 py-4 font-semibold text-white transition hover:bg-orange-600">
+                  Request roofing quotation
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+                <Link to="/gallery" className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 px-6 py-4 font-semibold text-white transition hover:bg-white/20">
+                  See completed work
+                </Link>
+              </div>
+            </div>
+            <div className="rounded-[2rem] border border-white/10 bg-white/10 p-3 shadow-2xl">
+              <img src={IMAGES.roofing} alt="Industrial roofing installation by J.D. Enterprise" className="h-[420px] w-full rounded-[1.5rem] object-cover" loading="eager" />
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">Material options</p>
+              <h2 className="mt-3 font-heading text-3xl font-bold text-slate-900 sm:text-4xl">Roofing systems selected for performance and durability</h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                The right roof and wall covering depends on environmental exposure, building use and long-term maintenance expectations. We advise on system configurations that support both functionality and appearance.
+              </p>
+            </div>
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+              {materials.map((material) => (
+                <div key={material} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-500/10 text-orange-600">
+                    <Layers className="h-5 w-5" />
+                  </div>
+                  <p className="mt-4 font-semibold text-slate-900">{material}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white py-20">
+          <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+            <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">System benefits</p>
+              <h2 className="mt-3 font-heading text-3xl font-bold text-slate-900 sm:text-4xl">Roofing solutions that strengthen the building envelope</h2>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2">
+              {systemBenefits.map((benefit) => (
+                <div key={benefit} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-500/10 text-orange-600">
+                    <ShieldCheck className="h-5 w-5" />
+                  </div>
+                  <p className="mt-4 font-semibold text-slate-900">{benefit}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">Applications</p>
+              <h2 className="mt-3 font-heading text-3xl font-bold text-slate-900 sm:text-4xl">Used across factories, plants, workshops and warehouses</h2>
+            </div>
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+              {applications.map((application) => (
+                <div key={application} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-500/10 text-orange-600">
+                    <SunMedium className="h-5 w-5" />
+                  </div>
+                  <p className="mt-4 font-semibold text-slate-900">{application}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">Installation process</p>
+                <h2 className="mt-3 font-heading text-3xl font-bold text-slate-900 sm:text-4xl">An organized approach to roof and wall system installation</h2>
+              </div>
+              <div className="grid gap-6 md:grid-cols-2">
+                {installationSteps.map((step, index) => (
+                  <div key={step} className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">0{index + 1}</div>
+                    <p className="mt-4 font-semibold text-slate-900">{step}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm lg:p-12">
+              <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">Maintenance approach</p>
+                  <h2 className="mt-3 font-heading text-3xl font-bold text-slate-900 sm:text-4xl">Designed for long-term performance and easier upkeep</h2>
+                </div>
+                <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-600">
+                      <Droplets className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading text-xl font-semibold text-slate-900">Protective design</h3>
+                      <p className="mt-3 leading-7 text-slate-600">The right roofing system helps reduce water ingress, heat gain and wear from environmental exposure.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <ServiceFAQ items={faqs} title="Roofing and cladding questions" />
+        <ServiceCTA title="Let us propose the right roofing solution for your building" description="Whether you need a new industrial roof or a cladding upgrade, our team can recommend a durable and practical system for Ahmedabad and Gujarat." />
+        <RelatedServices />
+      </main>
+    </>
+  );
+}

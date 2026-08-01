@@ -15,10 +15,13 @@ export default function Home() {
   return (
     <>
      <SEO
-  title="Industrial Shed Fabrication Company | J.D Enterprise"
-  description="J.D Enterprise is a leading industrial fabrication company in India specializing in Industrial Sheds, PEB Buildings, Steel Fabrication, Warehouse Construction, Roofing Solutions and Custom Engineering with 28+ years of experience."
-  keywords="Industrial Shed, PEB Building, Steel Fabrication, Warehouse Construction, Roofing, Industrial Structure, J.D Enterprise, Ahmedabad, Gujarat, India"
+  title="Industrial Shed Fabrication Company Ahmedabad | J.D Enterprise"
+  description="J.D Enterprise is a trusted industrial fabrication company in Ahmedabad, Gujarat offering industrial sheds, PEB buildings, steel fabrication, warehouse construction and roofing solutions."
+  keywords="industrial shed fabrication company in Ahmedabad, PEB building manufacturer in Gujarat, steel fabrication company in Ahmedabad, warehouse construction company in Gujarat"
   url="https://jdfabrication.co.in/"
+  ogTitle="Industrial Shed Fabrication Company Ahmedabad | J.D Enterprise"
+  ogDescription="Trusted industrial fabrication company in Ahmedabad, Gujarat delivering industrial sheds, PEB buildings, steel fabrication, warehouse construction and roofing solutions."
+  imageAlt="Industrial fabrication and construction services by J.D Enterprise in Ahmedabad, Gujarat"
 />
       <main className="space-y-24">
         <Hero />
