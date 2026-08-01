@@ -640,10 +640,10 @@ ${formData.message}`
 
                 <ContactLine icon={Mail} title="Email">
                   <a
-                    href="mailto:sagarchauhan@jdfabrication.co.in"
+                    href="mailto:sagar.chauhan@jdfabrication.co.in"
                     className="break-all hover:text-orange-400"
                   >
-                    sagarchauhan@jdfabrication.co.in
+                    sagar.chauhan@jdfabrication.co.in
                   </a>
                 </ContactLine>
 
