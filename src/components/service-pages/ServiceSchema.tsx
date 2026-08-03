@@ -24,7 +24,7 @@ export default function ServiceSchema({
       "name": "J.D Enterprise",
       "url": "https://jdfabrication.co.in",
       "telephone": "+91-9099099916",
-      "email": "sagarchauhan@jdfabrication.co.in",
+      "email": "sagar.chauhan@jdfabrication.co.in",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ahmedabad",
@@ -47,7 +47,7 @@ export default function ServiceSchema({
     "image": "https://jdfabrication.co.in/logo.png",
     "url": "https://jdfabrication.co.in",
     "telephone": "+91-9099099916",
-    "email": "sagarchauhan@jdfabrication.co.in",
+    "email": "sagar.chauhan@jdfabrication.co.in",
     "description": description,
     "address": {
       "@type": "PostalAddress",

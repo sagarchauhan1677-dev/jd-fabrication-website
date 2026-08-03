@@ -131,8 +131,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="mailto:sagarchauhan@jdfabrication.co.in" className="text-gray-300 text-sm hover:text-secondary transition-colors">
-                  sagarchauhan@jdfabrication.co.in
+                <a href="mailto:sagar.chauhan@jdfabrication.co.in" className="text-gray-300 text-sm hover:text-secondary transition-colors">
+                  sagar.chauhan@jdfabrication.co.in
                 </a>
               </li>
             </ul>

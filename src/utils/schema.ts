@@ -15,7 +15,7 @@ export const organizationSchema = {
     "addressCountry": "IN"
   },
   "telephone": "+91-9099099916",
-  "email": "sagarchauhan@jdfabrication.co.in",
+  "email": "sagar.chauhan@jdfabrication.co.in",
   "sameAs": [
     "https://www.instagram.com/j.d.enterprise1677/",
     "https://x.com/JDENTERPRISE007"
@@ -34,7 +34,7 @@ export const localBusinessSchema = {
   "image": "https://jdfabrication.co.in/logo.png",
   "url": "https://jdfabrication.co.in",
   "telephone": "+91-9099099916",
-  "email": "sagarchauhan@jdfabrication.co.in",
+  "email": "sagar.chauhan@jdfabrication.co.in",
   "priceRange": "₹₹",
   "openingHoursSpecification": [
     {
