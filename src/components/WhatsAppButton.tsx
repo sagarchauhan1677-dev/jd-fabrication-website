@@ -1,23 +1,20 @@
-import { MessageCircle } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
-  const phoneNumber = '919099099916'; // Sagarsinh Chauhan
   const message = encodeURIComponent(
-    'Hello J.D Enterprise! I would like to inquire about your industrial fabrication services.'
+    "Hello J.D. Enterprise,\n\nI am interested in your industrial fabrication services. Please share more details and a quotation.\n\nThank you."
   );
 
   return (
     <a
-      href={`https://wa.me/${phoneNumber}?text=${message}`}
+      href={`https://wa.me/919099099916?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 p-4 bg-[#25D366] rounded-full shadow-lg hover:scale-110 transition-transform duration-300 group whatsapp-pulse"
-      aria-label="Chat on WhatsApp"
+      className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] shadow-2xl transition hover:scale-110"
+      title="Get a free quotation on WhatsApp"
     >
-      <MessageCircle className="w-7 h-7 text-white" />
-      <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white text-gray-800 px-4 py-2 rounded-lg shadow-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-        Chat on WhatsApp
-      </span>
+      
+      <FaWhatsapp className="text-4xl text-white" />
     </a>
   );
 }

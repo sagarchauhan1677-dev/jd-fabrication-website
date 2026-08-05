@@ -60,10 +60,14 @@ export default function Navbar() {
             {navLinks.map((link) => {
               if (link.name === 'Services') {
                 return (
-                  <div key={link.name} className="relative" onMouseLeave={() => setShowServicesMenu(false)}>
+                  <div
+                    key={link.name}
+                    className="relative"
+                    onMouseEnter={() => setShowServicesMenu(true)}
+                    onMouseLeave={() => setShowServicesMenu(false)}
+                  >
                     <button
                       type="button"
-                      onMouseEnter={() => setShowServicesMenu(true)}
                       onClick={() => setShowServicesMenu((prev) => !prev)}
                       className={`flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ${
                         isScrolled ? 'text-gray-700 hover:text-primary hover:bg-gray-100' : 'text-white/90 hover:text-white hover:bg-white/10'
@@ -73,17 +77,19 @@ export default function Navbar() {
                       <ChevronDown className="h-4 w-4" />
                     </button>
                     {showServicesMenu && (
-                      <div className="absolute left-0 top-full mt-2 w-72 rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl">
-                        {serviceLinks.map((service) => (
-                          <Link
-                            key={service.name}
-                            to={service.href}
-                            onClick={handleLinkClick}
-                            className="block rounded-xl px-3 py-3 text-sm font-medium text-slate-700 transition hover:bg-orange-50 hover:text-orange-600"
-                          >
-                            {service.name}
-                          </Link>
-                        ))}
+                      <div className="absolute left-0 top-full z-50 pt-2">
+                        <div className="w-72 rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl">
+                          {serviceLinks.map((service) => (
+                            <Link
+                              key={service.name}
+                              to={service.href}
+                              onClick={handleLinkClick}
+                              className="block rounded-xl px-3 py-3 text-sm font-medium text-slate-700 transition hover:bg-orange-50 hover:text-orange-600"
+                            >
+                              {service.name}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </div>

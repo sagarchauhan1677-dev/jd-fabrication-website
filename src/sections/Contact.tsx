@@ -9,7 +9,6 @@ import {
   Factory,
   Mail,
   MapPin,
-  MessageCircle,
   Phone,
   Send,
   ShieldCheck,
@@ -17,6 +16,7 @@ import {
   Users,
   X,
 } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const PRIMARY_PHONE = '919099099916';
@@ -24,7 +24,7 @@ const SECONDARY_PHONE = '919409119219';
 const ACCESS_KEY = 'ce0c6ec1-899b-4d3c-8f74-f2069589afd3';
 
 const generalWhatsAppMessage = encodeURIComponent(
-  'Hello J.D. Enterprise, I would like to discuss an industrial fabrication project.'
+  'Hello J.D. Enterprise,\n\nI am interested in Industrial Sheds, PEB Buildings, Steel Fabrication, Warehouse Construction, Roofing & Cladding, and would like a quotation.\n\nThank you.'
 );
 
 type FormData = {
@@ -267,10 +267,10 @@ ${formData.message}`
                 href={`https://wa.me/${PRIMARY_PHONE}?text=${generalWhatsAppMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#1fbd5a]"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 font-bold text-white shadow-lg shadow-green-500/20 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#1ebe5d]"
               >
-                <MessageCircle className="h-5 w-5" />
-                WhatsApp
+                <FaWhatsapp className="h-5 w-5" />
+                Chat on WhatsApp
               </a>
             </div>
           </div>
@@ -345,10 +345,10 @@ ${formData.message}`
                         href={member.whatsapp}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg bg-[#25D366] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#1fbd5a]"
+                        className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-green-500/20 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#1ebe5d]"
                       >
-                        <MessageCircle className="h-4 w-4" />
-                        WhatsApp
+                        <FaWhatsapp className="h-4 w-4" />
+                        WhatsApp Now
                       </a>
                     </div>
                   </div>
@@ -738,10 +738,10 @@ ${formData.message}`
                 href={`https://wa.me/${PRIMARY_PHONE}?text=${generalWhatsAppMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3.5 font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-slate-100"
+                className="inline-flex items-center gap-3 rounded-xl bg-[#25D366] px-7 py-3.5 font-bold text-white shadow-lg shadow-green-500/20 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#1ebe5d]"
               >
-                <MessageCircle className="h-5 w-5 text-[#25D366]" />
-                WhatsApp Us
+                <FaWhatsapp className="h-6 w-6" />
+                Get Free Quote on WhatsApp
               </a>
             </div>
           </div>

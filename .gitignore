@@ -24,3 +24,12 @@ dist-ssr
 
 .vercel
 .env*
+
+.vercel
+.env*
+
+node_modules/
+dist/
+.vercel/
+.env.local
+*.tsbuildinfo
