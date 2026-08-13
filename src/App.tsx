@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 import Home from "./pages/Home";
+import BlogPage from "./pages/BlogPage";
+import BlogPostPage from "./pages/BlogPostPage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -44,6 +46,8 @@ function App() {
         <Route path="/services/warehouse-construction" element={<WarehouseConstructionPage />} />
         <Route path="/services/roofing-cladding" element={<RoofingCladdingPage />} />
         <Route path="/services/structural-works" element={<StructuralWorksPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/contact" element={<ContactPage />} />

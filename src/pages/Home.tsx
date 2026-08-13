@@ -10,6 +10,7 @@ import Projects from "../sections/Projects";
 import Gallery from "../sections/Gallery";
 import Testimonials from "../sections/Testimonials";
 import Contact from "../sections/Contact";
+import LatestInsights from "../sections/LatestInsights";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <WhyChooseUs />
         <Statistics />
         <Projects />
+        <LatestInsights />
         <Gallery />
         <Testimonials />
         <Contact />
