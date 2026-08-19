@@ -31,7 +31,7 @@ export default function SEO({
   keywords,
   ogTitle = title,
   ogDescription = description,
-  ogImage = "https://jdfabrication.co.in/logo.png",
+  ogImage = "https://jdfabrication.co.in/jd-enterprise-logo.svg",
   twitterTitle = title,
   twitterDescription = description,
   twitterImage = ogImage,
