@@ -5,6 +5,8 @@ export const organizationSchema = {
   "url": "https://jdfabrication.co.in",
   "logo": "https://jdfabrication.co.in/jd-enterprise-logo.svg",
   "foundingDate": "1996",
+  "slogan": "Just Think We Do",
+  "knowsAbout": ["Industrial fabrication", "Steel fabrication", "Industrial sheds", "PEB buildings", "Warehouse construction", "Roofing and cladding"],
   "description": "J.D Enterprise is a leading industrial fabrication and construction company in Ahmedabad, Gujarat, India specializing in industrial sheds, PEB buildings, steel fabrication, warehouse construction and roofing systems.",
   "address": {
     "@type": "PostalAddress",
