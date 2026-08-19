@@ -3,7 +3,7 @@ export const organizationSchema = {
   "@type": "Organization",
   "name": "J.D Enterprise",
   "url": "https://jdfabrication.co.in",
-  "logo": "https://jdfabrication.co.in/logo.png",
+  "logo": "https://jdfabrication.co.in/jd-enterprise-logo.svg",
   "foundingDate": "1996",
   "description": "J.D Enterprise is a leading industrial fabrication and construction company in Ahmedabad, Gujarat, India specializing in industrial sheds, PEB buildings, steel fabrication, warehouse construction and roofing systems.",
   "address": {
@@ -31,7 +31,7 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "J.D Enterprise",
-  "image": "https://jdfabrication.co.in/logo.png",
+  "image": "https://jdfabrication.co.in/jd-enterprise-logo.svg",
   "url": "https://jdfabrication.co.in",
   "telephone": "+91-9099099916",
   "email": "sagar.chauhan@jdfabrication.co.in",
