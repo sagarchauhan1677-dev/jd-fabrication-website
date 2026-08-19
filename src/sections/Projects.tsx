@@ -42,7 +42,7 @@ const projects = [
     title: "Fabrication Work at Ahmedabad International Airport",
     category: "Custom Fabrication",
     location: "Ahmedabad, Gujarat",
-    image: "/images/projects/ahmedabad-airport-work.svg",
+    image: "/images/Gallery/fabricationwork59.JPG",
   },
 ];
 
