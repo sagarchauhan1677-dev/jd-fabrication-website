@@ -14,6 +14,7 @@ export default function AboutPage() {
       />
 
       <main className="py-20">
+        <h1 className="sr-only">About J.D. Enterprise – Steel Fabricators in Ahmedabad</h1>
         <About />
       </main>
     </>
