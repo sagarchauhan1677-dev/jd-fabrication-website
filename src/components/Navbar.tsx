@@ -49,12 +49,18 @@ export default function Navbar() {
     >
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2 group" onClick={handleLinkClick}>
+          <Link to="/" className="group flex items-center gap-3" onClick={handleLinkClick}>
             <img
               src="/jd-enterprise-logo.svg"
-              alt="J.D. Enterprise – Just Think We Do"
+              alt="J.D. Enterprise industrial fabrication and construction company"
               className="h-14 w-auto max-w-[200px] rounded-xl bg-white/95 px-2 py-1 object-contain shadow-lg transition-all duration-300 sm:h-16 sm:max-w-[250px] lg:h-20 lg:max-w-[290px]"
             />
+            <span className={`hidden border-l-2 border-orange-500 pl-3 text-xs font-bold uppercase leading-5 tracking-[0.12em] xl:block ${isScrolled ? 'text-slate-800' : 'text-white'}`}>
+              Industrial Fabrication
+              <span className={`block font-medium normal-case tracking-normal ${isScrolled ? 'text-orange-600' : 'text-orange-300'}`}>
+                &amp; Construction
+              </span>
+            </span>
           </Link>
 
           <div className="hidden lg:flex items-center space-x-1">
