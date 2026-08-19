@@ -36,6 +36,14 @@ const projects = [
     location: "Vadodara, Gujarat",
     image: "/images/PEB%20Buildings/PEB-buildings1.jpeg",
   },
+  {
+    id: 5,
+    slug: "fabrication-work-ahmedabad-airport",
+    title: "Fabrication Work at Ahmedabad International Airport",
+    category: "Custom Fabrication",
+    location: "Ahmedabad, Gujarat",
+    image: "/images/Gallery/fabricationwork59.JPG",
+  },
 ];
 
 const categories = [
@@ -44,6 +52,7 @@ const categories = [
   "Steel Fabrication",
   "Industrial Shed",
   "PEB Building",
+  "Custom Fabrication",
 ];
 
 export default function Projects() {
