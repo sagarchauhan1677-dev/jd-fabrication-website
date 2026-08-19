@@ -39,9 +39,9 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <img
-                src="/logo.png?v=2"
-                alt="J.D Enterprise - Industrial Fabrication Company in Ahmedabad"
-                className="h-20 w-auto object-contain rounded-3xl bg-white/90 p-2 shadow-2xl"
+                src="/jd-enterprise-logo.svg"
+                alt="J.D. Enterprise – Just Think We Do"
+                className="h-28 w-auto max-w-full object-contain rounded-2xl bg-white/95 p-3 shadow-2xl"
               />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
