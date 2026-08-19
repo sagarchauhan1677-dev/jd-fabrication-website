@@ -11,6 +11,7 @@ type ProjectProfile = {
   image: string;
   description: string;
   services: string[];
+  galleryImages?: { src: string; alt: string; caption: string }[];
 };
 
 const projectProfiles: Record<string, ProjectProfile> = {
@@ -20,14 +21,31 @@ const projectProfiles: Record<string, ProjectProfile> = {
     shortTitle: "Airport Fabrication Work – Ahmedabad",
     location: "Ahmedabad International Airport, Gujarat",
     category: "Custom Fabrication",
-    image: "/images/projects/ahmedabad-airport-work.svg",
+    image: "/images/projects/airport-amul-outlet.svg",
     description:
-      "J.D. Enterprise completed custom fabrication and installation work for a Sankalp outlet structure at Ahmedabad International Airport. The supplied work video documents fabrication, on-site installation and the completed enclosure in the airport environment.",
+      "J.D. Enterprise completed custom fabrication and installation work for retail outlet structures at Ahmedabad International Airport. The supplied project photographs show the completed Amul and Rudhram outlets in the airport environment.",
     services: [
       "Custom MS frame and enclosure fabrication",
       "On-site assembly and installation",
       "Cutting, welding and finishing work",
-      "Completed outlet structure at the airport site",
+      "Completed retail outlet structures at the airport site",
+    ],
+    galleryImages: [
+      {
+        src: "/images/projects/airport-amul-outlet.svg",
+        alt: "Completed Amul outlet structure fabricated by J.D. Enterprise at Ahmedabad International Airport",
+        caption: "Completed Amul outlet structure at Ahmedabad International Airport",
+      },
+      {
+        src: "/images/projects/airport-rudhram-outlet.svg",
+        alt: "Completed Rudhram outlet structure fabricated by J.D. Enterprise at Ahmedabad International Airport",
+        caption: "Completed Rudhram outlet structure at Ahmedabad International Airport",
+      },
+      {
+        src: "/images/projects/ahmedabad-airport-work.svg",
+        alt: "Completed Sankalp outlet fabrication work by J.D. Enterprise at Ahmedabad International Airport",
+        caption: "Completed Sankalp outlet fabrication work at Ahmedabad International Airport",
+      },
     ],
   },
   "industrial-fabrication-sanand": {
@@ -233,6 +251,38 @@ export default function ProjectDetailPage() {
             </aside>
           </div>
         </section>
+
+        {project.galleryImages && (
+          <section className="bg-slate-100 py-20">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
+                Real project photographs
+              </p>
+              <h2 className="mt-3 font-heading text-3xl font-bold text-slate-900">
+                Completed work at Ahmedabad International Airport
+              </h2>
+              <p className="mt-4 max-w-3xl text-slate-600">
+                These photographs were supplied by J.D. Enterprise as visual documentation
+                of the completed fabrication and installation work.
+              </p>
+              <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {project.galleryImages.map((item) => (
+                  <figure key={item.src} className="overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      loading="lazy"
+                      className="h-80 w-full object-cover"
+                    />
+                    <figcaption className="p-4 text-sm font-medium text-slate-700">
+                      {item.caption}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         <section className="bg-slate-950 py-16 text-white">
           <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 px-6 md:flex-row md:items-center">
