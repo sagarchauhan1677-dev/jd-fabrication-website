@@ -20,7 +20,7 @@ const projectProfiles: Record<string, ProjectProfile> = {
     shortTitle: "Airport Fabrication Work – Ahmedabad",
     location: "Ahmedabad International Airport, Gujarat",
     category: "Custom Fabrication",
-    image: "/images/Gallery/fabricationwork59.JPG",
+    image: "/images/projects/ahmedabad-airport-work.svg",
     description:
       "J.D. Enterprise completed custom fabrication and installation work for a Sankalp outlet structure at Ahmedabad International Airport. The supplied work video documents fabrication, on-site installation and the completed enclosure in the airport environment.",
     services: [
