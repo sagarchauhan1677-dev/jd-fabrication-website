@@ -51,18 +51,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2 group" onClick={handleLinkClick}>
             <img
-              src="/logo.png?v=2"
-              alt="J.D. Enterprise - Industrial Shed and Steel Fabrication Company in Ahmedabad"
-              className="h-12 sm:h-14 lg:h-16 w-auto object-contain rounded-2xl bg-white/90 p-1 shadow-lg transition-all duration-300"
+              src="/jd-enterprise-logo.svg"
+              alt="J.D. Enterprise – Just Think We Do"
+              className="h-14 w-auto max-w-[200px] rounded-xl bg-white/95 px-2 py-1 object-contain shadow-lg transition-all duration-300 sm:h-16 sm:max-w-[250px] lg:h-20 lg:max-w-[290px]"
             />
-            <div className="leading-tight">
-              <span className={`block font-heading text-base font-bold tracking-wide sm:text-lg ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
-                J.D. Enterprise
-              </span>
-              <span className={`block text-[10px] font-medium uppercase tracking-[0.12em] sm:text-xs ${isScrolled ? 'text-orange-600' : 'text-orange-300'}`}>
-                Industrial Fabrication
-              </span>
-            </div>
           </Link>
 
           <div className="hidden lg:flex items-center space-x-1">
