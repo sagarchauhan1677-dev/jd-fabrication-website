@@ -44,8 +44,11 @@ export default function Footer() {
                 className="h-28 w-auto max-w-full object-contain rounded-2xl bg-white/95 p-3 shadow-2xl"
               />
             </div>
+            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.12em] text-secondary">
+              Industrial Fabrication &amp; Construction
+            </p>
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              Leading industrial fabrication and construction company in India, delivering premium quality engineering solutions since 1996.
+              Industrial fabrication company in Ahmedabad delivering industrial sheds, PEB buildings, steel fabrication, warehouse structures, roofing and cladding solutions across Gujarat since 1996.
             </p>
             <p className="text-white text-sm font-medium mb-3">Follow us</p>
             <div className="flex items-center gap-3">
