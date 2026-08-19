@@ -19,6 +19,7 @@ export const organizationSchema = {
   "telephone": "+91-9099099916",
   "email": "sagar.chauhan@jdfabrication.co.in",
   "sameAs": [
+    "https://www.facebook.com/Jashdhan1998",
     "https://www.instagram.com/j.d.enterprise1677/",
     "https://x.com/JDENTERPRISE007"
   ],
