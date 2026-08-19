@@ -13,7 +13,7 @@ export default function Hero() {
     >
       <img
         src={IMAGES.hero}
-        alt="Industrial shed fabrication and steel structure construction by J.D Enterprise"
+        alt="Industrial shed fabrication and steel structure construction by J.D. Enterprise"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 hero-overlay" />
@@ -28,7 +28,7 @@ export default function Hero() {
           >
             <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
             <span className="text-white/90 text-sm font-medium">
-              28+ Years of Industrial Excellence
+              J.D. Enterprise • Ahmedabad • Since 1996
             </span>
           </div>
 
@@ -40,8 +40,8 @@ export default function Hero() {
                 : 'opacity-0'
             }`}
           >
-            Building Stronger{' '}
-            <span className="gradient-text">Industrial Solutions</span>
+            J.D. Enterprise{' '}
+            <span className="gradient-text">Industrial Shed & Steel Fabrication</span>
           </h1>
 
           {/* Subheadline */}
