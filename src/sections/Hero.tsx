@@ -40,8 +40,8 @@ export default function Hero() {
                 : 'opacity-0'
             }`}
           >
-            J.D. Enterprise{' '}
-            <span className="gradient-text">Industrial Shed & Steel Fabrication</span>
+            Industrial Fabrication Company in{' '}
+            <span className="gradient-text">Ahmedabad</span>
           </h1>
 
           {/* Subheadline */}
@@ -52,7 +52,7 @@ export default function Hero() {
                 : 'opacity-0'
             }`}
           >
-            Industrial Sheds | PEB Buildings | Steel Fabrication | Warehouse Solutions
+            Industrial sheds, PEB buildings, structural steel fabrication, warehouse construction, roofing and cladding across Gujarat.
           </p>
 
           {/* CTA Buttons */}
@@ -88,22 +88,22 @@ export default function Hero() {
             }`}
           >
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-secondary">1000+</span>
+              <div className="flex h-12 min-w-12 items-center justify-center rounded-lg bg-secondary/20 px-3">
+                <span className="text-lg font-bold text-secondary">1996</span>
               </div>
-              <span className="text-white/70 text-sm">Projects<br />Completed</span>
+              <span className="text-white/70 text-sm">Established<br />Experience</span>
             </div>
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-secondary">1000+</span>
+              <div className="flex h-12 min-w-12 items-center justify-center rounded-lg bg-secondary/20 px-3">
+                <span className="text-sm font-bold text-secondary">Gujarat</span>
               </div>
-              <span className="text-white/70 text-sm">Happy<br />Clients</span>
+              <span className="text-white/70 text-sm">Project<br />Service Area</span>
             </div>
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-secondary">28+</span>
+              <div className="flex h-12 min-w-12 items-center justify-center rounded-lg bg-secondary/20 px-3">
+                <span className="text-sm font-bold text-secondary">On-site</span>
               </div>
-              <span className="text-white/70 text-sm">Years<br />Experience</span>
+              <span className="text-white/70 text-sm">Fabrication &<br />Installation</span>
             </div>
           </div>
         </div>
