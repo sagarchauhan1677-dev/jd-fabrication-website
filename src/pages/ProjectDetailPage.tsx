@@ -20,14 +20,14 @@ const projectProfiles: Record<string, ProjectProfile> = {
     shortTitle: "Airport Fabrication Work – Ahmedabad",
     location: "Ahmedabad International Airport, Gujarat",
     category: "Custom Fabrication",
-    image: "/images/Gallery/fabricationwork59.JPG",
+    image: "/images/projects/ahmedabad-airport-work.svg",
     description:
-      "J.D. Enterprise completed fabrication work at Ahmedabad International Airport, supporting the site requirement with custom MS fabrication, coordinated installation and careful finishing in an active commercial environment.",
+      "J.D. Enterprise completed custom fabrication and installation work for a Sankalp outlet structure at Ahmedabad International Airport. The supplied work video documents fabrication, on-site installation and the completed enclosure in the airport environment.",
     services: [
-      "Custom MS fabrication",
-      "Site measurement and requirement coordination",
-      "Fabrication and installation support",
-      "Finishing aligned with the project environment",
+      "Custom MS frame and enclosure fabrication",
+      "On-site assembly and installation",
+      "Cutting, welding and finishing work",
+      "Completed outlet structure at the airport site",
     ],
   },
   "industrial-fabrication-sanand": {
