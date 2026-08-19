@@ -14,6 +14,7 @@ export default function GalleryPage() {
       />
 
       <main className="py-20">
+        <h1 className="sr-only">J.D. Enterprise Industrial Shed and Steel Fabrication Gallery</h1>
         <Gallery />
       </main>
     </>
