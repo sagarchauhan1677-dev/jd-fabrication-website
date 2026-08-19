@@ -14,6 +14,22 @@ type ProjectProfile = {
 };
 
 const projectProfiles: Record<string, ProjectProfile> = {
+  "fabrication-work-ahmedabad-airport": {
+    slug: "fabrication-work-ahmedabad-airport",
+    title: "Fabrication Work at Ahmedabad International Airport",
+    shortTitle: "Airport Fabrication Work – Ahmedabad",
+    location: "Ahmedabad International Airport, Gujarat",
+    category: "Custom Fabrication",
+    image: "/images/Gallery/fabricationwork59.JPG",
+    description:
+      "J.D. Enterprise completed fabrication work at Ahmedabad International Airport, supporting the site requirement with custom MS fabrication, coordinated installation and careful finishing in an active commercial environment.",
+    services: [
+      "Custom MS fabrication",
+      "Site measurement and requirement coordination",
+      "Fabrication and installation support",
+      "Finishing aligned with the project environment",
+    ],
+  },
   "industrial-fabrication-sanand": {
     slug: "industrial-fabrication-sanand",
     title: "Industrial Fabrication Project Experience in Sanand",
