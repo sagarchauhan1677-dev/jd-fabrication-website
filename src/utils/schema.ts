@@ -19,7 +19,7 @@ export const organizationSchema = {
     "addressCountry": "IN"
   },
   "telephone": "+91-9099099916",
-  "email": "jd1677@jdfabrication.co.in",
+  "email": "sagar.chauhan@jdfabrication.co.in",
   "sameAs": ["https://www.facebook.com/Jashdhan1998", "https://www.instagram.com/j.d.enterprise1677/", "https://x.com/JDENTERPRISE007"],
   "areaServed": [
     { "@type": "City", "name": "Ahmedabad" },
@@ -40,7 +40,7 @@ export const localBusinessSchema = {
   "image": "https://jdfabrication.co.in/jd-enterprise-logo.svg",
   "url": "https://jdfabrication.co.in/",
   "telephone": "+91-9099099916",
-  "email": "jd1677@jdfabrication.co.in",
+  "email": "sagar.chauhan@jdfabrication.co.in",
   "priceRange": "₹₹",
   "parentOrganization": { "@id": "https://jdfabrication.co.in/#organization" },
   "openingHoursSpecification": [{
