@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const serviceLinks = [
   { name: "Industrial Shed Fabrication", href: "/services/industrial-shed-fabrication" },
   { name: "PEB Buildings", href: "/services/peb-buildings" },
-  { name: "Structural Steel Fabrication", href: "/services/steel-fabrication" },
+  { name: "MS & Structural Steel Fabrication", href: "/services/steel-fabrication" },
   { name: "Warehouse Construction", href: "/services/warehouse-construction" },
   { name: "Roofing & Cladding", href: "/services/roofing-cladding" },
   { name: "Structural Works", href: "/services/structural-works" },
@@ -20,21 +20,30 @@ const locationLinks = [
 
 export default function HomeSEOIntro() {
   return (
-    <section className="bg-slate-50 py-20">
+    <section className="bg-slate-50 py-20" aria-labelledby="fabricators-ahmedabad-heading">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-orange-600">
               Ahmedabad, Gujarat
             </p>
-            <h2 className="mt-3 font-heading text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">
-              Industrial fabrication for sheds, steel structures and commercial projects
+            <h2
+              id="fabricators-ahmedabad-heading"
+              className="mt-3 font-heading text-3xl font-bold leading-tight text-slate-900 sm:text-4xl"
+            >
+              Industrial fabricators in Ahmedabad for sheds, MS steel structures and PEB projects
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
               Established in 1996, J.D. Enterprise provides custom MS fabrication,
-              industrial shed construction, PEB structures, warehouse steelwork,
-              roofing and cladding in Ahmedabad and across Gujarat. We support projects
-              from requirement review and fabrication through coordinated site installation.
+              structural steel fabrication, industrial shed construction, PEB buildings,
+              warehouse steelwork, roofing and cladding in Ahmedabad and across Gujarat.
+              Our team supports project requirements from fabrication planning and
+              material preparation through coordinated on-site installation.
+            </p>
+            <p className="mt-4 leading-7 text-slate-600">
+              We undertake fabrication work for factories, warehouses, workshops and
+              commercial facilities, with verified project experience in Ahmedabad,
+              Sanand, Changodar, Chhatral and Vadodara.
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {serviceLinks.map((service) => (
@@ -57,7 +66,7 @@ export default function HomeSEOIntro() {
             </div>
             <p className="mt-4 leading-7 text-slate-300">
               View real project experience and supplied photographs from industrial
-              and commercial work completed in Gujarat.
+              and commercial fabrication work completed in Gujarat.
             </p>
             <div className="mt-7 space-y-3">
               {locationLinks.map((location) => (
