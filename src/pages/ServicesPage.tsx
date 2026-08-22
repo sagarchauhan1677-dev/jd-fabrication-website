@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, Factory, Layers, ShieldCheck, Wrench, Warehouse } from "lucide-react";
+import { ArrowRight, Building2, Factory, Layers, Layers3, ShieldCheck, Wrench, Warehouse } from "lucide-react";
 import SEO from "../components/SEO";
 import { IMAGES } from "../constants/images";
 
@@ -46,6 +46,13 @@ const services = [
     image: IMAGES.industrialSheds,
     link: "/services/structural-works",
   },
+  {
+    title: "Mezzanine Floor Fabrication",
+    description: "Custom MS mezzanine floors, industrial platforms, stairs and handrails that increase usable factory and warehouse space.",
+    icon: Layers3,
+    image: IMAGES.steelFabrication,
+    link: "/services/mezzanine-floor-fabrication",
+  },
 ];
 
 const industries = [
@@ -62,7 +69,7 @@ export default function ServicesPage() {
     <>
       <SEO
         title="Industrial Fabrication Services in Ahmedabad | J.D Enterprise"
-        description="Explore industrial shed fabrication, PEB buildings, steel fabrication, warehouse construction, roofing and structural works by J.D Enterprise in Ahmedabad, Gujarat."
+        description="Industrial shed, MS fabrication, PEB, warehouse, roofing and mezzanine floor services by J.D. Enterprise in Ahmedabad and Gujarat since 1996."
         keywords="industrial fabrication services Ahmedabad, PEB building manufacturer Gujarat, steel fabrication company Ahmedabad"
         url="https://jdfabrication.co.in/services"
         ogTitle="Industrial Fabrication Services in Ahmedabad | J.D Enterprise"

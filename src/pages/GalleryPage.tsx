@@ -5,11 +5,11 @@ export default function GalleryPage() {
   return (
     <>
       <SEO
-        title="J.D. Enterprise Projects | Steel Fabrication Ahmedabad"
-        description="Browse J.D. Enterprise project images featuring industrial sheds, PEB buildings, steel fabrication and warehouse construction work in Ahmedabad and Gujarat."
+        title="Industrial Shed Projects Ahmedabad & Gujarat | J.D. Enterprise"
+        description="See real industrial shed, MS fabrication, PEB, roofing and warehouse project photographs from J.D. Enterprise across Ahmedabad and Gujarat."
         keywords="industrial shed gallery Ahmedabad, steel fabrication project images Gujarat, PEB building gallery Ahmedabad, warehouse construction gallery Gujarat"
         url="https://jdfabrication.co.in/gallery"
-        ogTitle="J.D. Enterprise Projects | Steel Fabrication Ahmedabad"
+        ogTitle="Industrial Shed & MS Fabrication Projects | J.D. Enterprise"
         ogDescription="Browse images of industrial fabrication and construction projects completed by J.D. Enterprise in Ahmedabad and Gujarat."
       />
 

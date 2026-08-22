@@ -55,11 +55,11 @@ export default function RoofingCladdingPage() {
   return (
     <>
       <SEO
-        title="Industrial Roofing and Cladding Contractor Ahmedabad | J.D. Enterprise"
-        description="J.D. Enterprise is an industrial roofing and cladding contractor in Ahmedabad, delivering durable roofing systems for Gujarat industrial projects."
+        title="Roofing & Cladding Contractor Ahmedabad | J.D. Enterprise"
+        description="Industrial roofing and cladding contractor in Ahmedabad for factories and warehouses. New roofs, wall cladding, repairs and upgrades. Get a quotation."
         keywords="industrial roofing contractor Ahmedabad, cladding contractor Gujarat, roofing sheets Ahmedabad"
         url="https://jdfabrication.co.in/services/roofing-cladding"
-        ogTitle="Industrial Roofing and Cladding Contractor Ahmedabad | J.D. Enterprise"
+        ogTitle="Roofing & Cladding Contractor Ahmedabad | J.D. Enterprise"
         ogDescription="J.D. Enterprise provides industrial roofing and cladding services for factory, warehouse and plant projects in Ahmedabad and Gujarat."
       />
       <ServiceSchema
@@ -79,7 +79,7 @@ export default function RoofingCladdingPage() {
                 <HardHat className="h-4 w-4" />
                 Roofing and cladding specialist
               </div>
-              <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">Weather-resistant roofing and cladding systems for industrial buildings</h1>
+              <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">Industrial roofing and cladding contractor in Ahmedabad</h1>
               <p className="mt-6 text-lg leading-8 text-slate-300">
                 J.D. Enterprise delivers roofing and cladding services that protect industrial assets, improve building performance and keep projects looking precise and dependable throughout their service life.
               </p>

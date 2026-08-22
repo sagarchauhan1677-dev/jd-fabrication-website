@@ -17,16 +17,16 @@ import HomeSEOIntro from "../sections/HomeSEOIntro";
 export default function Home() {
   return (
     <>
-      <SEO
-        title="Industrial Fabrication Company Ahmedabad | J.D. Enterprise"
-        description="Industrial fabricators in Ahmedabad for industrial sheds, PEB buildings, MS and structural steel fabrication, warehouses, roofing and cladding across Gujarat since 1996."
-        keywords="industrial fabricators in Ahmedabad, industrial fabrication company Ahmedabad, MS fabricator Ahmedabad, structural steel fabrication Ahmedabad, industrial shed fabrication company Ahmedabad, PEB building manufacturer Gujarat, warehouse construction Gujarat"
-        url="https://jdfabrication.co.in/"
-        ogTitle="Industrial Fabrication Company Ahmedabad | J.D. Enterprise"
-        ogDescription="Industrial fabricators in Ahmedabad delivering industrial sheds, PEB buildings, MS and structural steel fabrication, warehouse construction, roofing and cladding across Gujarat."
-        imageAlt="Industrial fabrication and construction services by J.D. Enterprise in Ahmedabad, Gujarat"
-        structuredData={serviceSchema}
-      />
+     <SEO
+  title="Industrial Shed & MS Fabrication Ahmedabad | J.D. Enterprise"
+  description="Industrial shed and MS fabrication company in Ahmedabad since 1996. Factory sheds, warehouses, PEB structures, roofing and cladding. Get a free quotation."
+  keywords="industrial shed fabrication company in Ahmedabad, PEB building manufacturer in Gujarat, steel fabrication company in Ahmedabad, warehouse construction company in Gujarat"
+  url="https://jdfabrication.co.in/"
+  ogTitle="Industrial Shed & MS Fabrication Company Ahmedabad | J.D. Enterprise"
+  ogDescription="Trusted industrial fabrication company in Ahmedabad, Gujarat delivering industrial sheds, PEB buildings, steel fabrication, warehouse construction and roofing solutions."
+  imageAlt="Industrial fabrication and construction services by J.D. Enterprise in Ahmedabad, Gujarat"
+  structuredData={serviceSchema}
+/>
       <main className="space-y-24">
         <Hero />
         <About />

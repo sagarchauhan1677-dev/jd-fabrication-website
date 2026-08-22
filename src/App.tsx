@@ -20,6 +20,7 @@ import ProjectDetailPage from "./pages/ProjectDetailPage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import MezzanineFloorPage from "./pages/MezzanineFloorPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -47,6 +48,7 @@ function App() {
         <Route path="/services/warehouse-construction" element={<WarehouseConstructionPage />} />
         <Route path="/services/roofing-cladding" element={<RoofingCladdingPage />} />
         <Route path="/services/structural-works" element={<StructuralWorksPage />} />
+        <Route path="/services/mezzanine-floor-fabrication" element={<MezzanineFloorPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/projects" element={<ProjectsPage />} />

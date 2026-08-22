@@ -19,8 +19,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "industrial-shed-construction-cost-ahmedabad",
     title: "Industrial Shed Construction Cost in Ahmedabad: Complete Guide",
-    metaTitle: "Industrial Shed Construction Cost Ahmedabad 2026 | J.D. Enterprise",
-    metaDescription: "Understand industrial shed construction costs in Ahmedabad, including structural steel, roofing, foundations, flooring and key price factors. Get a project-specific quotation from J.D. Enterprise.",
+    metaTitle: "Industrial Shed Cost in Ahmedabad: 2026 Guide & Factors",
+    metaDescription: "Industrial shed construction cost guide for Ahmedabad: steel, roofing, foundations, flooring and major price factors. Request a project quotation."
     excerpt: "Understand typical costs, key cost drivers and how to budget for industrial shed construction in Ahmedabad.",
     category: "Cost & Estimation",
     date: "2026-07-15",
@@ -171,7 +171,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 id="how-to-get-quotation">How to Get an Accurate Quotation</h2>
       <p>Provide approximate dimensions (length, width), clear height, intended use, crane requirements, preferred roofing type and any available drawings. If possible, include site photos and a soil report.</p>
-      <p>To request a quotation, <a href="/contact">request a project quotation</a> or review our <a href="/services/industrial-shed-fabrication">industrial shed fabrication services</a> for scope examples.</p>
+      <p>To request a quotation, <a href="/contact">request a project quotation</a>, review our <a href="/services/industrial-shed-fabrication">industrial shed fabrication services</a>, explore our <a href="/services/mezzanine-floor-fabrication">MS mezzanine floor fabrication</a>, or see relevant <a href="/projects">projects across Gujarat</a>.</p>
 
       <h2 id="faqs">FAQs</h2>
       <div class="space-y-4">

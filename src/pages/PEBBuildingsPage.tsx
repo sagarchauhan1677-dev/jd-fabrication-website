@@ -65,8 +65,8 @@ export default function PEBBuildingsPage() {
   return (
     <>
       <SEO
-        title="PEB Building Manufacturer in Ahmedabad, Gujarat | J.D. Enterprise"
-        description="J.D. Enterprise is a trusted PEB building manufacturer in Ahmedabad, Gujarat, delivering fast, durable and engineered steel buildings for industry."
+        title="PEB Building Manufacturer Ahmedabad & Gujarat | J.D. Enterprise"
+        description="PEB building manufacturer in Ahmedabad for factories and warehouses across Gujarat. Design, fabrication, roofing and erection support. Get a quotation."
         keywords="PEB building manufacturer Ahmedabad, pre engineered building Gujarat, industrial steel building contractor"
         url="https://jdfabrication.co.in/services/peb-buildings"
         ogTitle="PEB Building Manufacturer in Ahmedabad, Gujarat | J.D. Enterprise"
@@ -89,7 +89,7 @@ export default function PEBBuildingsPage() {
                 <Building2 className="h-4 w-4" />
                 PEB building solutions
               </div>
-              <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">Pre-engineered steel buildings built for speed, strength and scale</h1>
+              <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">PEB building manufacturer in Ahmedabad for factories and warehouses</h1>
               <p className="mt-6 text-lg leading-8 text-slate-300">
                 J.D. Enterprise provides PEB buildings for industrial units, warehouses, production facilities and support infrastructure across Ahmedabad and Gujarat. Our building systems combine structural efficiency, faster installation and long-term durability in a single engineered package.
               </p>

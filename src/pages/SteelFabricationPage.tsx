@@ -52,11 +52,11 @@ export default function SteelFabricationPage() {
   return (
     <>
       <SEO
-        title="Structural Steel Fabrication Company Ahmedabad | J.D. Enterprise"
-        description="J.D. Enterprise offers structural steel fabrication in Ahmedabad with precision engineering, custom fabrication and industrial-grade steelwork."
-        keywords="structural steel fabrication Ahmedabad, steel fabrication company Gujarat, custom steel fabrication"
+        title="MS Steel Fabrication Company Ahmedabad | J.D. Enterprise"
+        description="MS steel fabrication company in Ahmedabad since 1996. Structural frames, trusses, platforms and custom industrial fabrication. Request a quotation."
+        keywords="MS steel fabrication Ahmedabad, structural steel fabrication Ahmedabad, steel fabrication company Gujarat, custom MS fabrication"
         url="https://jdfabrication.co.in/services/steel-fabrication"
-        ogTitle="Structural Steel Fabrication Company Ahmedabad | J.D. Enterprise"
+        ogTitle="MS Steel Fabrication Company Ahmedabad | J.D. Enterprise"
         ogDescription="J.D. Enterprise provides structural steel fabrication, custom metal fabrication and industrial steel solutions in Ahmedabad and Gujarat."
       />
       <ServiceSchema
@@ -76,7 +76,7 @@ export default function SteelFabricationPage() {
                 <Wrench className="h-4 w-4" />
                 Industrial steel fabrication
               </div>
-              <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">Precision structural steel fabrication for demanding industrial projects</h1>
+              <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">MS steel fabrication company in Ahmedabad for industrial projects</h1>
               <p className="mt-6 text-lg leading-8 text-slate-300">
                 J.D. Enterprise supports clients with structural steel fabrication, custom metal work and industrial fabrication services that are engineered for resilience, fit and long-term use.
               </p>

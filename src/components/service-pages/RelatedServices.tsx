@@ -32,6 +32,11 @@ const links = [
     description: "Engineer-led structural steel and building support solutions.",
     to: "/services/structural-works",
   },
+  {
+    title: "Mezzanine Floor Fabrication",
+    description: "Custom MS mezzanine floors and industrial platforms for factories and warehouses.",
+    to: "/services/mezzanine-floor-fabrication",
+  },
 ];
 
 export default function RelatedServices() {
