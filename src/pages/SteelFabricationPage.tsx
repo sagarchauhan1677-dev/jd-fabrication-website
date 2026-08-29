@@ -52,9 +52,9 @@ export default function SteelFabricationPage() {
   return (
     <>
       <SEO
-        title="MS Steel Fabrication Company Ahmedabad | J.D. Enterprise"
-        description="MS steel fabrication company in Ahmedabad since 1996. Structural frames, trusses, platforms and custom industrial fabrication. Request a quotation."
-        keywords="MS steel fabrication Ahmedabad, structural steel fabrication Ahmedabad, steel fabrication company Gujarat, custom MS fabrication"
+        title="Steel Fabrication Ahmedabad | MS Fabricators Near You"
+        description="Need MS steel fabrication in Ahmedabad? J.D. Enterprise fabricates industrial frames, trusses, platforms and custom structures. Get a free quotation."
+        keywords="steel fabrication Ahmedabad, fabrication near me, MS fabricators Ahmedabad, structural steel fabrication Ahmedabad, steel fabrication company Gujarat"
         url="https://jdfabrication.co.in/services/steel-fabrication"
         ogTitle="MS Steel Fabrication Company Ahmedabad | J.D. Enterprise"
         ogDescription="J.D. Enterprise provides structural steel fabrication, custom metal fabrication and industrial steel solutions in Ahmedabad and Gujarat."
@@ -78,7 +78,7 @@ export default function SteelFabricationPage() {
               </div>
               <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">MS steel fabrication company in Ahmedabad for industrial projects</h1>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                J.D. Enterprise supports clients with structural steel fabrication, custom metal work and industrial fabrication services that are engineered for resilience, fit and long-term use.
+                Looking for dependable fabrication near you? J.D. Enterprise supports factories, warehouses and commercial projects with structural steel fabrication, custom MS work and on-site installation across Ahmedabad and Gujarat.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-500 px-6 py-4 font-semibold text-white transition hover:bg-orange-600">
@@ -138,6 +138,23 @@ export default function SteelFabricationPage() {
                     <p className="mt-3 leading-7 text-slate-600">{item.text}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm lg:p-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">Local fabrication support</p>
+              <h2 className="mt-3 font-heading text-3xl font-bold text-slate-900 sm:text-4xl">MS and steel fabrication near Ahmedabad industrial areas</h2>
+              <p className="mt-5 max-w-4xl text-lg leading-8 text-slate-600">
+                We execute steel fabrication work in Ahmedabad, Sanand, Changodar, Chhatral, Vatva and Naroda. Share your drawing, approximate dimensions, steel specification and site location for a practical scope and quotation.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-5 text-sm font-semibold">
+                <Link to="/services/industrial-shed-fabrication" className="text-orange-600 hover:text-orange-700">Industrial shed construction</Link>
+                <Link to="/services/peb-buildings" className="text-orange-600 hover:text-orange-700">PEB steel buildings</Link>
+                <Link to="/projects" className="text-orange-600 hover:text-orange-700">View fabrication projects</Link>
               </div>
             </div>
           </div>
@@ -205,7 +222,7 @@ export default function SteelFabricationPage() {
         </section>
 
         <ServiceFAQ items={faqs} title="Questions about steel fabrication services" />
-        <ServiceCTA title="Discuss your fabrication requirement with our team" description="From structural frames to custom steel assemblies, we can help you plan a practical and reliable solution for your project timeline and site requirements." />
+        <ServiceCTA title="Get a free steel fabrication quotation" description="Send your drawing, dimensions, quantity and Ahmedabad or Gujarat site location. Our team will review the requirement and contact you about the fabrication scope." buttonLabel="Get Free Quotation" />
         <RelatedServices />
       </main>
     </>
