@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
      <SEO
-  title="Industrial Shed & MS Fabrication Ahmedabad | J.D. Enterprise"
-  description="Industrial shed and MS fabrication company in Ahmedabad since 1996. Factory sheds, warehouses, PEB structures, roofing and cladding. Get a free quotation."
+  title="Industrial Shed & Steel Fabrication Ahmedabad | J.D."
+  description="Industrial shed construction and steel fabrication in Ahmedabad since 1996. PEB buildings, warehouses, roofing and MS fabrication. Get a free quote."
   keywords="industrial shed fabrication company in Ahmedabad, PEB building manufacturer in Gujarat, steel fabrication company in Ahmedabad, warehouse construction company in Gujarat"
   url="https://jdfabrication.co.in/"
   ogTitle="Industrial Shed & MS Fabrication Company Ahmedabad | J.D. Enterprise"
