@@ -19,8 +19,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "industrial-shed-construction-cost-ahmedabad",
     title: "Industrial Shed Construction Cost in Ahmedabad: Complete Guide",
-    metaTitle: "Industrial Shed Cost in Ahmedabad: 2026 Guide & Factors",
-    metaDescription: "Industrial shed construction cost guide for Ahmedabad: steel, roofing, foundations, flooring and major price factors. Request a project quotation.",
+    metaTitle: "Industrial Shed Construction Cost Ahmedabad | 2026 Guide",
+    metaDescription: "Check industrial shed construction cost factors in Ahmedabad, including steel, roofing and foundations. Get a project-specific quotation from J.D. Enterprise.",
     excerpt: "Understand typical costs, key cost drivers and how to budget for industrial shed construction in Ahmedabad.",
     category: "Cost & Estimation",
     date: "2026-07-15",
