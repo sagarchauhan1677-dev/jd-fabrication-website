@@ -65,9 +65,9 @@ export default function PEBBuildingsPage() {
   return (
     <>
       <SEO
-        title="PEB Building Manufacturer Ahmedabad & Gujarat | J.D. Enterprise"
-        description="PEB building manufacturer in Ahmedabad for factories and warehouses across Gujarat. Design, fabrication, roofing and erection support. Get a quotation."
-        keywords="PEB building manufacturer Ahmedabad, pre engineered building Gujarat, industrial steel building contractor"
+        title="PEB Steel Building Manufacturer Ahmedabad | J.D. Enterprise"
+        description="PEB steel building manufacturer in Ahmedabad for factories and warehouses. Design, fabrication, roofing and erection across Gujarat. Get a free quote."
+        keywords="PEB steel building, PEB building manufacturer Ahmedabad, pre engineered building Gujarat, industrial steel building contractor"
         url="https://jdfabrication.co.in/services/peb-buildings"
         ogTitle="PEB Building Manufacturer in Ahmedabad, Gujarat | J.D. Enterprise"
         ogDescription="J.D. Enterprise delivers pre engineered building solutions for industrial, commercial and warehouse projects in Ahmedabad and Gujarat."
@@ -91,7 +91,7 @@ export default function PEBBuildingsPage() {
               </div>
               <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">PEB building manufacturer in Ahmedabad for factories and warehouses</h1>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                J.D. Enterprise provides PEB buildings for industrial units, warehouses, production facilities and support infrastructure across Ahmedabad and Gujarat. Our building systems combine structural efficiency, faster installation and long-term durability in a single engineered package.
+                J.D. Enterprise provides complete PEB steel building solutions for industrial units, warehouses, production facilities and workshops across Ahmedabad and Gujarat. Our pre-engineered systems combine efficient steel design, faster installation, roofing and long-term durability in one coordinated package.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-500 px-6 py-4 font-semibold text-white transition hover:bg-orange-600">
@@ -219,7 +219,7 @@ export default function PEBBuildingsPage() {
         </section>
 
         <ServiceFAQ items={faqs} title="Frequently asked questions about PEB buildings" />
-        <ServiceCTA title="Let us design a PEB building that fits your industrial goals" description="Whether you need a warehouse, factory building, workshop or multi-use industrial structure, our team can prepare a practical and efficient solution for Ahmedabad and Gujarat." />
+        <ServiceCTA title="Get a PEB steel building proposal" description="Share your building length, width, clear height, location, intended use and crane requirement. We will review the details for a practical PEB scope and quotation." buttonLabel="Request Free PEB Quote" />
         <RelatedServices />
       </main>
     </>
