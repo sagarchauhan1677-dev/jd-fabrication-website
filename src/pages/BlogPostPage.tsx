@@ -190,9 +190,9 @@ export default function BlogPostPage() {
                       <div dangerouslySetInnerHTML={{ __html: parts[0] }} />
                       <div className="my-8">
                         <ServiceCTA
-                          title="Planning an Industrial Shed Project?"
-                          description="J.D. Enterprise provides industrial shed fabrication, PEB structures, roofing, structural steel fabrication and warehouse solutions across Ahmedabad and Gujarat."
-                          buttonLabel="Request Free Quotation"
+                          title="Get Your Industrial Shed Cost Estimate"
+                          description="Share the shed length, width, clear height, project location, intended use and roofing preference. Our Ahmedabad team will review the requirement and help prepare a project-specific quotation."
+                          buttonLabel="Get Free Shed Quotation"
                           buttonTo="/contact"
                         />
                       </div>
@@ -206,8 +206,8 @@ export default function BlogPostPage() {
 
               <div className="mt-8">
                 <ServiceCTA
-                  title="Get a Project-Specific Quotation"
-                  description="Contact us for detailed estimates, site visits and technical clarifications."
+                  title="Ready to Plan Your Industrial Shed?"
+                  description="Call or WhatsApp J.D. Enterprise with your dimensions, drawings or site photos for a project-specific industrial shed quotation in Ahmedabad or Gujarat."
                   buttonLabel="Request Free Quotation"
                   buttonTo="/contact"
                 />
