@@ -9,10 +9,10 @@ import ServiceSchema from "../components/service-pages/ServiceSchema";
 import { IMAGES } from "../constants/images";
 
 const materials = [
-  "Profiled metal sheets",
-  "Insulated roofing panels",
-  "Wall cladding systems",
-  "Weather-resistant roof coverings",
+  "Colour-coated profiled roofing sheets",
+  "PUF and insulated roofing panels",
+  "Industrial wall cladding systems",
+  "Polycarbonate daylight roofing sheets",
 ];
 
 const systemBenefits = [
@@ -55,9 +55,9 @@ export default function RoofingCladdingPage() {
   return (
     <>
       <SEO
-        title="Roofing & Cladding Contractor Ahmedabad | J.D. Enterprise"
-        description="Industrial roofing and cladding contractor in Ahmedabad for factories and warehouses. New roofs, wall cladding, repairs and upgrades. Get a quotation."
-        keywords="industrial roofing contractor Ahmedabad, cladding contractor Gujarat, roofing sheets Ahmedabad"
+        title="Industrial Roofing & Cladding Ahmedabad | J.D. Enterprise"
+        description="Commercial and industrial roofing and cladding in Ahmedabad. Roofing sheets, PUF panels, wall cladding, repairs and replacement. Request a free quote."
+        keywords="commercial roofing and cladding, industrial roofing contractor Ahmedabad, cladding contractor Gujarat, roofing sheets Ahmedabad, PUF panel roofing"
         url="https://jdfabrication.co.in/services/roofing-cladding"
         ogTitle="Roofing & Cladding Contractor Ahmedabad | J.D. Enterprise"
         ogDescription="J.D. Enterprise provides industrial roofing and cladding services for factory, warehouse and plant projects in Ahmedabad and Gujarat."
@@ -81,7 +81,7 @@ export default function RoofingCladdingPage() {
               </div>
               <h1 className="mt-6 font-heading text-4xl font-bold leading-tight sm:text-5xl">Industrial roofing and cladding contractor in Ahmedabad</h1>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                J.D. Enterprise delivers roofing and cladding services that protect industrial assets, improve building performance and keep projects looking precise and dependable throughout their service life.
+                J.D. Enterprise delivers commercial and industrial roofing and cladding for factories, warehouses, workshops and plants. We handle new roofing sheets, wall cladding, insulated panels, leak repairs and roof replacement across Ahmedabad and Gujarat.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-500 px-6 py-4 font-semibold text-white transition hover:bg-orange-600">
@@ -95,6 +95,29 @@ export default function RoofingCladdingPage() {
             </div>
             <div className="rounded-[2rem] border border-white/10 bg-white/10 p-3 shadow-2xl">
               <img src={IMAGES.roofing} alt="Industrial roofing installation by J.D. Enterprise" className="h-[420px] w-full rounded-[1.5rem] object-cover" loading="eager" />
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">Complete roofing scope</p>
+                <h2 className="mt-3 font-heading text-3xl font-bold text-slate-900 sm:text-4xl">Commercial roofing and cladding for new and existing buildings</h2>
+                <p className="mt-5 text-lg leading-8 text-slate-600">
+                  Our scope can include roof-sheet installation, wall cladding, ridge and flashing work, gutters, downpipes, skylight sheets, insulation and replacement of damaged sheets. We assess roof slope, drainage, support spacing, wind exposure and maintenance access before recommending a system.
+                </p>
+              </div>
+              <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
+                <h3 className="font-heading text-2xl font-semibold text-slate-900">Areas we serve</h3>
+                <p className="mt-4 leading-7 text-slate-600">Ahmedabad, Sanand, Changodar, Chhatral, Vatva, Naroda and industrial locations across Gujarat.</p>
+                <div className="mt-6 space-y-3 text-sm font-semibold">
+                  <Link to="/services/industrial-shed-fabrication" className="block text-orange-600 hover:text-orange-700">Roofing for industrial shed construction</Link>
+                  <Link to="/services/peb-buildings" className="block text-orange-600 hover:text-orange-700">Roofing for PEB steel buildings</Link>
+                  <Link to="/services/steel-fabrication" className="block text-orange-600 hover:text-orange-700">Supporting steel fabrication</Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -203,7 +226,7 @@ export default function RoofingCladdingPage() {
         </section>
 
         <ServiceFAQ items={faqs} title="Roofing and cladding questions" />
-        <ServiceCTA title="Let us propose the right roofing solution for your building" description="Whether you need a new industrial roof or a cladding upgrade, our team can recommend a durable and practical system for Ahmedabad and Gujarat." />
+        <ServiceCTA title="Request a free roofing and cladding quotation" description="Send the approximate roof area, site location, existing roof photos and preferred sheet or panel type. We will recommend a practical system for your building." buttonLabel="Get Free Roofing Quote" />
         <RelatedServices />
       </main>
     </>
